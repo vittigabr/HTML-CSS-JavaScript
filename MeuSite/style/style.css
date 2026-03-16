@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: red;
+    font-size: 30px;
+    font-family: 'Lucida sans', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.textoInfo{
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+.logoCss{
+    display: block;
+    margin: 0 auto;
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color: rgb(223, 147, 147);
+    padding: 10px;
+    text-align: left;
+}
+
+ma{
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    color: black;
+}
+
+nav a:hover{
+    color: rgb(0, 217, 255);
+}
+
+.tituloListaGeral{
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.textoLista{
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.tituloLista{
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: left;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.listaOrdenada, .listaNOrdenada{
+    color: black;
+    font-size: 16px;
+    font-family: "Arial";
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 80px;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: rgb(223, 147, 147);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contato{
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    text-align: center;
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+.logoJs{
+    display: block;
+    margin: 0 auto;
+    float: center;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+}
