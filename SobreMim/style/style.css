@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap');
 
 *{
     margin: 0;
@@ -32,27 +33,40 @@ header{
     gap: 20px
 }
 
+.imgAlura{
+    height: 550px;
+    width: 488px;
+    float: right
+}
+
 h1{
     color: var(--cor-secundaria);
-    padding-left: 355px;
+    padding-left: 300px;
     margin-top: 235px;
-    
 }
 
 .textSpecial{
     color: var(--cor-terciaria)
 }
 
-h4{
+.textDescricao{
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     margin-top: 40px;
-    padding-left: 355px;
+    padding-left: 300px;
 }
 
 section{
     padding-top: 84px;
     padding-left: 305px;
+}
+
+.textRedesSociais{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    padding-left: 355px;
+    padding-top: 30px
 }
 
 nav a{
