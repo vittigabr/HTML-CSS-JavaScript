@@ -57,8 +57,8 @@ h1{
 }
 
 section{
-    padding-top: 84px;
-    padding-left: 305px;
+    padding-top: 80px;
+    padding-left: 250px;
 }
 
 .textRedesSociais{
@@ -66,7 +66,7 @@ section{
     font-family: var(--fonte-primaria);
     font-size: 1.5rem;
     padding-left: 355px;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 nav a{
@@ -78,6 +78,17 @@ nav a{
 
 nav a:hover{
     color: var(--cor-terciaria);
+}
+
+.imgGit{
+    padding: 10px
+}
+
+.github{
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    padding: 0 0 0 30px;
+    
 }
 
 footer{
