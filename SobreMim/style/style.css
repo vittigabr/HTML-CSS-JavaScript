@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4DF;
+    --fonte-primaria: 'Krona One';
+    --fonte-secundaria: 'Montserrat'
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    flex-direction: column;
+    display: flex;
+    background-color: var(--cor-primaria);
+}
+
+main{
+    flex: 1
+}
+
+header{
+    display: flex;
+    gap: 20px
+}
+
+h1{
+    color: var(--cor-secundaria);
+    padding-left: 355px;
+    margin-top: 235px;
+    
+}
+
+.textSpecial{
+    color: var(--cor-terciaria)
+}
+
+h4{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    margin-top: 40px;
+    padding-left: 355px;
+}
+
+section{
+    padding-top: 84px;
+    padding-left: 305px;
+}
+
+nav a{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 50px;
+}
+
+nav a:hover{
+    color: var(--cor-terciaria);
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    height: 80px;
+}
+
+.textFooter{
+    text-align: center;
+    margin: 30px;
+    padding-right: 450px;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria)
+}
