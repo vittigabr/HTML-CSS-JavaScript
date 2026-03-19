@@ -13,6 +13,13 @@ body {
     flex-direction: column;
 }
 
+.logoHtml{
+    height: 40px;
+    width: auto;
+    float: left;
+    display: block;
+}
+
 main{
     flex: 1;
 }
