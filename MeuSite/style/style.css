@@ -13,6 +13,12 @@ body {
     flex-direction: column;
 }
 
+/*.containerImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
 .logoHtml{
     height: 40px;
     width: auto;
