@@ -100,7 +100,7 @@ footer{
 .textFooter{
     text-align: center;
     margin: 30px;
-    padding-right: 450px;
+    padding-right: auto;
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria)
 }
