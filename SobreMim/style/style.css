@@ -33,6 +33,11 @@ header{
     gap: 20px
 }
 
+section{
+    padding-top: 40px;
+    padding-left: 250px;
+}
+
 .imgAlura{
     display: flex;
     padding: 50px;
@@ -46,6 +51,7 @@ h1{
     color: var(--cor-secundaria);
     padding-left: 300px;
     margin-top: 235px;
+    font-size: 3rem;
 }
 
 .textSpecial{
@@ -56,12 +62,21 @@ h1{
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     margin-top: 40px;
+    font-size: 1.5rem;
     padding-left: 300px;
 }
 
-section{
-    padding-top: 40px;
-    padding-left: 250px;
+div{
+    padding-top: 10px;
+    padding-left: 150px;
+}
+
+.apresentacaoLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+    align-items: center;
 }
 
 .textRedesSociais{
@@ -87,12 +102,15 @@ nav a:hover{
     padding: 10px
 }
 
-.textIcone{
-    font-family: var(--fonte-secundaria);
+div a{
     color: var(--cor-secundaria);
-    padding: 0 0 0 10px;
-    align-items: center;
-    
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 50px;
+}
+
+div a:hover{
+    color: var(--cor-secundaria);
 }
 
 footer{
