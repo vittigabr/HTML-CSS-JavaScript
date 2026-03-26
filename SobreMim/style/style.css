@@ -34,9 +34,12 @@ header{
 }
 
 .imgAlura{
+    display: flex;
+    padding: 50px;
+    margin: 50px;
     height: 550px;
     width: 488px;
-    float: right
+    float:  right
 }
 
 h1{
