@@ -21,6 +21,11 @@ html, body{
 body{
     background-color: var(--cor-primaria);
     flex-direction: column;
+    display: flex;
+}
+
+main{
+    flex: 1
 }
 
 .cabecalho{
@@ -73,9 +78,14 @@ nav a:hover{
 }
 
 .redes{
+    flex-direction: column;
+    display: flex;
     margin-left: 290px;
     width: 381px;
     margin-top: -170px;
+    height: auto;
+    margin-bottom: 30px;
+    gap: 20px;
 }
 
 .redesTitulo{
@@ -84,6 +94,35 @@ nav a:hover{
     font-weight: 100;
     text-align: center;
     padding-bottom: 40px;
+}
+
+.imgLinks{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.redeLinks{
+    text-align: left;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding: 20px;
+    border-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 20px;
+}
+
+.redeLinks:hover{
+    color: var(--cor-terciaria);
+}
+
+footer{
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
 }
 
 @media (max-width: 1200px){
