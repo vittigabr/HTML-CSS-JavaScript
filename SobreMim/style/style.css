@@ -82,6 +82,8 @@ nav a:hover{
     font-family: var(--fonte-primaria);
     color: var(--cor-secundaria);
     font-weight: 100;
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 @media (max-width: 1200px){
