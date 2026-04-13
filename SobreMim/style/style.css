@@ -10,6 +10,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22D4DF;
+    --cor-quartenaria: #383737;
     --fonte-primaria: 'Krona One';
     --fonte-secundaria: 'Montserrat'
 }
@@ -114,7 +115,7 @@ nav a:hover{
 }
 
 .redeLinks:hover{
-    color: var(--cor-terciaria);
+    background-color: var(--cor-quartenaria);
 }
 
 .apresentacaoMim{
