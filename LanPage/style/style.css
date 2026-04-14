@@ -161,3 +161,76 @@ body{
 .botaoTelas:hover{
     background-color: var(--efeito-botao);
 }
+
+.containerQuartenario{
+    padding-bottom: 200px;
+}
+
+.containerNote{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.containerNoteText{
+    font-family: var(--fonte-primaria);
+}
+
+.tituloNote{
+    text-align: left;    
+}
+
+.textNote{
+    text-align: left;
+    font-weight: 100;
+    max-width: 34em;
+}
+
+.containerQuintenario{
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.containerConsole{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 100;
+    padding-bottom: 100px;
+    gap: 40px;
+}
+
+ul{
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+li{
+    margin-right: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+li a:hover{
+    color:var(--efeito-botao)
+}
