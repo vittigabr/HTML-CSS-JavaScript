@@ -35,14 +35,6 @@ body{
     text-align: center;
 }
 
-/*
-.containerPrincipal{
-    display: grid;
-    margin-left: 53px;
-    margin-top: -300px;
-    height: 100vh;
-}*/
-
 .containerCombo{
     margin: 50px;
     width: 588px;
