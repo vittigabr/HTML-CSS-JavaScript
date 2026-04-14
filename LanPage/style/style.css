@@ -92,6 +92,10 @@ body{
     background-color: #2c2c2c;
 }
 
+.containerSecundario{
+    padding-bottom: 200px;
+}
+
 .containerPlataformas{
     flex-direction: row;
     display: flex;
@@ -118,4 +122,38 @@ body{
 .textPlataformas{
     font-size: 16px;
     font-weight: 100;
+}
+
+.containerTerciario{
+    padding-bottom: 200px;
+}
+
+.containerTelas{
+    flex-direction: row;
+    display: flex;
+    margin-left: 300px;
+}
+
+.textTelas{
+    flex-direction: column;
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    max-width: 35em;
+    margin-right: 100px;
+    font-weight: 100;
+    gap: 10px
+}
+
+.botaoTelas{
+    border: 0px solid;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 15px;
+    width: 25%;
+    text-decoration: none;
+    font-weight: 400;
+    color:var(--cor-primaria)
 }
