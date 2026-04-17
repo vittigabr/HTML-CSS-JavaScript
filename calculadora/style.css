@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.numeros{
+    width: 500px;
+    justify-items: center;
+    background-color: blue;
+}
+
+.botao-numeros{
+    width: 500px;
+}
+
+.um-tres{
+    flex: content;
+    
+}
+
+p{
+    font-size: 30px;
+    padding: 20px;
+}
