@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+body{
+    height: 100%;
+}
+
+.background{
+    display: grid;
+    justify-content: center;
+    margin-top: 200px;
+}
+
 .numeros{
     width: 500px;
     justify-items: center;
@@ -14,8 +24,18 @@
 }
 
 .um-tres{
-    flex: content;
-    
+    display: flex;
+    justify-content: center;
+}
+
+.quatro-seis{
+    display: flex;
+    justify-content: center;
+}
+
+.sete-nove{
+    display: flex;
+    justify-content: center;
 }
 
 p{
