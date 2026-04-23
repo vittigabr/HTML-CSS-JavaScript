@@ -5,6 +5,7 @@
 
 body{
     height: 100%;
+    background-color: var(--bg);
 }
 
 .background{
@@ -13,11 +14,22 @@ body{
     margin-top: 200px;
 }
 
+.visor{
+    background-color: greenyellow;
+    text-align: center;
+    width: 480px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
 .numeros{
-    width: 1000px;
-    height: 1000px;
+    background-color:grey;
+    margin-bottom: 200px;
+    width: 600px;
+    height: 600px;
     justify-items: center;
-    background-color: blue;
+    border-radius: 15px;
+    box-shadow: 12px 12px rgb(236, 236, 236);
 }
 
 .botao-numeros{
@@ -57,4 +69,21 @@ button{
 img{
     height: 40px;
     width: 40px;
+}
+
+.light-theme{
+    --bg: #ffffff;
+    --bntColor: #ffffff;
+    --bntBackColor: #000000;
+}
+
+.dark-theme{
+    --bg: #000000;
+    --bntColor: #000000;
+    --bntBackColor: #ffffff;
+}
+
+.bnt{
+    color: var(--bntColor);
+    background-color: var(--bntBackColor);
 }
