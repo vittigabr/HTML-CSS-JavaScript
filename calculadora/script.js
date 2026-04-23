@@ -1,4 +1,4 @@
-let bnt = document.querySelector('.bnt');
+let bnt = document.querySelector('bnt');
 
 bnt.addEventListener('click', function(){
     document.body.classList.toggle('dark-theme')
