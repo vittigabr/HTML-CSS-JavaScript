@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+:root{
+    --back-color-white: #ffffff;
+    --back-color-black: #000000;
+}
+
 body{
     height: 100%;
     background-color: var(--bg);
@@ -72,18 +77,9 @@ img{
 }
 
 .light-theme{
-    --bg: #ffffff;
-    --bntColor: #ffffff;
-    --bntBackColor: #000000;
+    --bg: var(--back-color-white);
 }
 
 .dark-theme{
-    --bg: #000000;
-    --bntColor: #000000;
-    --bntBackColor: #ffffff;
-}
-
-.bnt{
-    color: var(--bntColor);
-    background-color: var(--bntBackColor);
+    --bg: var(--back-color-black);
 }
