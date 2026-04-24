@@ -20,4 +20,8 @@ module.exports = (req, res) => {
     if (req.method === "GET"){
         return res.status(200).json({medias});
     }
+    else if(req.method === "POST"){
+        const newMedia = req.body;
+        return res.status(201).json([...medias, newMedia])
+    }
 }
