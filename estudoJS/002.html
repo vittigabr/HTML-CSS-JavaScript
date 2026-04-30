@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
+    <style>
+        div{
+            display: flex
+        }
+    </style>
 </head>
 <body>
     <h1>Somando Números</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input id="botao" type="button" value="Somar">
-    <div id="res">Resultado</div>
+    <div><p>Resultado:</p><p id="res"></p></div>
     <script>
         let botao = document.getElementById('botao')
         botao.addEventListener('click', somar)
-        
+
         function somar(){
             let tn1 = document.getElementById('txtn1')
             let tn2 = document.querySelector('input#txtn2')
