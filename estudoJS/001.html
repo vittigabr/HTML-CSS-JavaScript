@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Teste</title>
+</head>
+<body class="corpoDocumento">
+    <!--<h1>Módulo A</h1>
+    <ul>
+        <li><code>window.alert</code>('Primeiro teste') // Cria um alerta na tela</li>
+        <li><code>window.confirm</code>('Segundo teste') // Cria uma pergunta de "sim ou não"</li>
+        <li><code>window.prompt</code>('Terceiro teste: escreva certo') // Cria um espaço de resposta</li>
+    </ul>
+
+    <h1>Módulo B</h1>
+    <ul>
+        <li><code>Number.parseInt(n)</code>// Transforma strings em numbers</li>
+        <li><code>String(n) ou n.toString()</code>// Transforma numbers em strings</li>
+        <li><code>`Eu estou estudando ${s}`</code>// Formata a string</li>
+        <li><code>n.toUpperCase()</code>// Tudo para letras maiusculas</li>
+        <li><code>n.length</code>// Comprimento da string</li>
+        <li><code>n.toLowerCase()</code>// Tudo para letras minusculas</li>
+        <li><code>n.toFixed(2)</code>// Escreve um número com duas casas decimais</li>
+    </ul>-->
+
+    <div class="bloco-acao">
+        Interaja...
+    </div>
+    <script>
+        // Aula 04 - módulo A
+        //window.alert('Primeiro teste') // Cria um alerta na tela
+        //window.confirm('Segundo teste') // Cria uma pergunta de "sim ou não"
+        //window.prompt('Terceiro teste: escreva certo') // Cria um espaço de resposta
+
+        // Aula 06 - módulo B
+        //let nome = window.prompt('Digite seu nome: ')
+        //document.writeln('É um prazer te conhecer, '+ nome)
+
+        //let number1 = window.prompt('Digite um número: ')
+        //let number2 = window.prompt('Digite outro número: ')
+        //let soma = Number.parseInt(number1)+ Number.parseInt(number2) // Transforma em number
+        //window.alert(`O resultado da soma é ${soma}`)
+
+        // Aula 09 - módulo C
+        //var corpo = document.body
+        //corpo.style.background = 'black'
+        
+        let a = document.getElementsByClassName("bloco-acao")[0]
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = "Clicou"
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = "Entrou"
+        }
+
+        function sair(){
+            a.innerText = "Interaja..."
+            a.style.background = 'cadetblue'
+        }
+    </script>
+</body>
+</html>
