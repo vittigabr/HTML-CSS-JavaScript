@@ -12,3 +12,19 @@
     }
     
 }*/
+
+let botao = document.getElementById('bnt2')
+botao.addEventListener('click', changeColor)
+let bg = document.body.style.backgroundColor
+document.body.style.backgroundColor = 'black'
+
+function changeColor(){
+    let back = document.body.style.backgroundColor
+    back = 'white'
+    if(back == 'white'){
+        back = 'black'
+    }
+    else{
+        back = 'white'
+    }
+}
