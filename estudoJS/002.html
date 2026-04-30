@@ -9,9 +9,12 @@
     <h1>Somando Números</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar">
+    <input id="botao" type="button" value="Somar">
     <div id="res">Resultado</div>
     <script>
+        let botao = document.getElementById('botao')
+        botao.addEventListener('click', somar)
+        
         function somar(){
             let tn1 = document.getElementById('txtn1')
             let tn2 = document.querySelector('input#txtn2')
