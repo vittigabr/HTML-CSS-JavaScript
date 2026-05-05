@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .back-clock{
+            background-color: #8a8a8a;
+            height: auto;
+            width: 200px;
+            text-align: center;
+            justify-self: center;
+            border: 2px solid; 
+            box-shadow: 5px 5px #dbdbdb;
+        }
+    </style>
+    <title>Relógio</title>
+</head>
+<body>
+    <div class="back-clock" id="clock">
+    </div>
+
+    <script>
+        let agora = new Date()
+        let dia = agora.getDate()
+        let mes = agora.getMonth()
+        let ano = agora.getFullYear()
+        let minuto = agora.getMinutes()
+        let hora = agora.getHours()
+        let clock = document.getElementById('clock')
+        clock.innerHTML = `<h1>${dia}/${mes}/${ano} ${hora}:${minuto}</h1>`
+    </script>
+</body>
+</html>

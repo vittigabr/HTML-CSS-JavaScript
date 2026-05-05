@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .botao-verificar{
+            padding: 10px;
+            font-size: 15px;
+        }
+        .resultado{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro: <input type="number" name="" id="velocidade">KM/h
+    <input type="button" id="botao" class="botao-verificar" value="Verificar">
+    <div class="resultado" id="resultado"></div>
+
+    <script>
+        let res = document.getElementById('resultado')
+        let bnt = document.getElementById('botao')
+        bnt.addEventListener('click', clicar)
+
+        function clicar(){
+            let velocidade = document.getElementById('velocidade')
+            let vel = Number(velocidade.value)
+            if(vel>60){
+                res.innerHTML = 'Você ultrapassou o limite de veolidade. <strong>MULTADO!</strong>'
+            }
+            else if(vel==0){
+                res.innerHTML = 'Você está parado'
+            }
+            else{
+                res.innerHTML = 'Você estava dentro do limite de velocidade.'
+            }
+        }
+    </script>
+</body>
+</html>
