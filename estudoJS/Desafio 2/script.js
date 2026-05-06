@@ -10,11 +10,15 @@ function verificar(){
         window.alert('[ERRO] Verifique os dados e tente novamente')
     }
     else{
+        /* var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        img.setAttribute('src', 'foto-bebe.png') */
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
         if (fsex[0].checked){
             genero = 'Homem'
+
         }
         else{
             genero = 'Mulher'
