@@ -1,11 +1,24 @@
-let agora = new Date()
-let nasc = document.getElementById('txtN')
-let dataAtual = agora.getFullYear()
-let res = document.getElementById('resultado')
 let botao = document.getElementById('botao')
 botao.addEventListener('click', verificar)
 
 function verificar(){
-    let idade = Number(dataAtual) - Number(nasc)
-    res.innerHTML = `Essa pessoa tem ${idade} anos de idade.`
+    var data = new Date()
+    var ano = data.getFullYear()
+    var fano = document.getElementById('txtN')
+    var res = document.querySelector('div#resultados')
+    if (fano.value.length == 0 || fano.value > ano){
+        window.alert('[ERRO] Verifique os dados e tente novamente')
+    }
+    else{
+        var fsex = document.getElementsByName('radsex')
+        var idade = ano - Number(fano.value)
+        var genero = ''
+        if (fsex[0].checked){
+            genero = 'Homem'
+        }
+        else{
+            genero = 'Mulher'
+        }
+        res.innerHTML = `Foi identificado um(a) ${genero} com ${idade} anos de idade.`
+    }    
 }
