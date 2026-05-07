@@ -18,3 +18,23 @@ main::after{
     width: 80vh;
     background: linear-gradient(92deg, #000 25%, rgba(0, 0, 0, 0) 75%) no-repeat;
 }
+
+main .personagens{
+    display: none;
+    height: 100vh;
+}
+
+main .personagem .selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.conteudo{
+    position: absolute;
+    
+}
