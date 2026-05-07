@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root{
-    --fonte-primaria: 'Rubik'
-}
-
 body{
     background-color: #000;
     overflow: hidden;
@@ -36,5 +32,26 @@ main .personagem .imagem{
 
 .conteudo{
     position: absolute;
-    
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.nomePersonagem{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
