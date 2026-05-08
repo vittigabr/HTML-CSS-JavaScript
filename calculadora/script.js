@@ -13,18 +13,18 @@
     
 }*/
 
-let botao = document.getElementById('bnt2')
-botao.addEventListener('click', changeColor)
-let bg = document.body.style.backgroundColor
-document.body.style.backgroundColor = 'black'
+var botao = document.querySelector('#bnt')
+botao.addEventListener('click', changeColor())
 
 function changeColor(){
-    let back = document.body.style.backgroundColor
-    back = 'white'
-    if(back == 'white'){
-        back = 'black'
+    console.log('funciona')
+    var back = document.querySelector('.body-div')
+    if (back.classList.contains('light-theme')){
+        back.classList.remove('light-theme');
+        back.classList.add('dark-theme');
     }
     else{
-        back = 'white'
+        back.classList.remove('dark-theme');
+        back.classList.add('light-theme');
     }
 }

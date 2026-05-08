@@ -7,13 +7,21 @@ body{
     height: 100%;
 }
 
-.light-bg{
+.light-theme{
+    background-color: #fff;
+}
+
+.dark-theme{
+    background-color: #000;
+}
+
+/* .light-bg{
     background-color: #ffffff;
 }
 
 .dark-bg{
     background-color: #000000;
-}
+} */
 
 .background{
     display: grid;
