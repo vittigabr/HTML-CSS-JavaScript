@@ -118,6 +118,7 @@ section h2{
     border: 1px solid #222;
     width: 100%;
     transition: 0.3s;
+    cursor: default;
 }
 
 .beneficio:hover{
