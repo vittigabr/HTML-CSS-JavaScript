@@ -87,3 +87,49 @@ body{
     background-color: #fff;
     transform: scale(1.1);
 }
+
+section{
+    padding: 80px 8%;
+}
+
+section h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.beneficios{
+    display: flex;
+    gap: 30px;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.beneficio{
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.beneficio:hover{
+    transform: translateY(-8px);
+    border-color: #00ff88;
+}
+
+.beneficio h3{
+    color: #00ff88;
+}
+
+.beneficio p{
+    color: #ccc;
+    line-height: 1.6;
+}
