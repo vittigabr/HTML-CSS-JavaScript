@@ -15,9 +15,9 @@
         <div>
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
         </section>
         <section class="sobre">
             <h2>Por que escolher a FitLife?</h2>
-            <section class="beneficios">
+            <div class="beneficios">
                 <div class="beneficio">
                     <h3>Equipamentos modernos</h3>
                     <p>Aparelhos seguros e atualizados para todos os níveis de treino.</p>
@@ -45,11 +45,81 @@
                     <h3>Ambiente motivador</h3>
                     <p>Espaço moderno, limpo e organizado para você evoluir todos os dias.</p>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section class="planos" id="planos">
+            <h2>Nossos planos</h2>
+            <p class="subtitulo">Escolha o plano ideal para o seu objetivo</p>
+            <div class="planos-container">
+                <div class="plano">
+                    <h3>Plano básico</h3>
+                    <p class="preco">R$ 79,90</p>
+                    <ul class="lista-plano">
+                        <li class="elemento-lista">Musuclação</li>
+                        <li class="elemento-lista">Horário comercial</li>
+                        <li class="elemento-lista">Avaliação inicial</li>
+                    </ul>
+                    <button class="botao-plano">Escolher Plano</button>
+                </div>
+                <div class="plano destacado">
+                    <h3>Plano Premium</h3>
+                    <p class="preco">R$ 119,90</p>
+                    <ul class="lista-plano">
+                        <li class="elemento-lista">Musuclação completa</li>
+                        <li class="elemento-lista">Aulas coletivas</li>
+                        <li class="elemento-lista">Acesso todos os dias</li>
+                    </ul>
+                    <button class="botao-plano">Escolher Plano</button>
+                </div>
+                <div class="plano">
+                    <h3>Plano Black</h3>
+                    <p class="preco">R$ 159,90</p>
+                    <ul class="lista-plano">
+                        <li class="elemento-lista">Acesso ilimitado</li>
+                        <li class="elemento-lista">Treino personalizado</li>
+                        <li class="elemento-lista">Área funcional</li>
+                    </ul>
+                    <button class="botao-plano">Escolher Plano</button>
+                </div>
+            </div>
+        </section>
+        <section class="fotos">
+            <h2>Estrutura da Academia</h2>
+            <div class="galeria">
+                <div class="foto musculacao">
+                    Musculação
+                </div>
+                <div class="foto cardio">
+                    Cardio
+                </div>
+                <div class="foto funcional">
+                    Funcional
+                </div>
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário e nossa equipe falará com você.</p>
+
+            <div class="formulario">
+                <form id="formContato">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome...">
+
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="email" placeholder="E-mail">
+                
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+            <p class="resposta" id="resposta"></p>
         </section>
     </main>
-    <footer>
-
+    <footer class="rodape">
+        <p>FitLife Academia &copy; 2026</p>
+        <p>Desenvolvido pelos alunos de Desenvolvimento de Sistemas</p>
     </footer>
 </body>
 </html>
