@@ -1,0 +1,14 @@
+/* .dropdown-elementos{
+    display: none; Esconde o menu
+}
+
+.dropdown:hover .dropdown-elementos{
+    display: block; Mostra ao passar o mouse 
+    
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
