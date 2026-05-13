@@ -1,0 +1,311 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    cursor: default;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    width: 100%;
+    padding: 20px 8%;
+    background-color: #050505;
+    border-bottom: 2px solid #00ff88;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #00ff88;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #00ff88;
+}
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(../src/hero.avif);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    padding: 120px 8%;
+}
+
+.hero-conteudo{
+    max-width: 650px;
+}
+
+.hero h1{
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ddd
+}
+
+.botao{
+    display: inline-block;
+    background-color: #00ff88;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.botao:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+section{
+    padding: 80px 8%;
+}
+
+section h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.beneficios{
+    display: flex;
+    gap: 30px;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.beneficio{
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.beneficio:hover{
+    transform: translateY(-8px);
+    border-color: #00ff88;
+}
+
+.beneficio h3{
+    color: #00ff88;
+}
+
+.beneficio p{
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.planos{
+    background-color: #000;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.planos-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plano{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.plano{
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    width: 100%;
+    max-width: 320px;
+    transition: 0.3s;
+}
+
+.plano:hover,
+form button:hover{
+    transform: translateY(-8px);
+    border-color: #00ff88;
+}
+
+.plano h3{
+    color: #fff;
+    font-size: 25px;
+}
+
+.destacado{
+    border: 2px solid #00ff88;
+}
+
+.preco{
+    color: #00ff88;
+    font-size: 30px;
+}
+
+.lista-plano{
+    list-style-type: none;
+}
+
+.elemento-lista{
+    margin-bottom: 10px;
+}
+
+.botao-plano, form button{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    max-width: 150px;
+    background-color: #00ff88;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fotos{
+    background-color: #000;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.galeria h2{
+    color: #fff
+}
+
+.foto{
+    display: flex;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    transition: 0.3;
+    align-items: end;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.musculacao{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../src/musculacao.avif);
+}
+
+.cardio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../src/cardio.avif);
+}
+
+.funcional{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../src/funcional.avif);
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+.contato p{
+    margin-bottom: 30px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#formContato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+#nome, #email, #mensagem{
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 10px;
+}
+
+#mensagem{
+    height: 120px;
+    resize: none;
+}
+
+.resposta{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ff88;
+}
+
+.rodape{
+    background-color: #050505;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #00ff88;
+}
