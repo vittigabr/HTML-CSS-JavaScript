@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
@@ -86,8 +90,101 @@ body{
 .todas-bijuu{
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../src/all-bijuus.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../src/todas-bijuus.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+.shukaku-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/gaara-shukaku.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.matatabi-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/yugito-matatabi.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.isobu-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/yagura-isobu.jpeg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.sonGoku-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/roshi-sonGoku.jpeg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.kokuo-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/han-kokuo.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.saiken-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/utakata-saiken.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.choumei-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/fuu-chomei.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.gyuki-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/killerBee-gyuky.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.kurama-section{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to right,rgba(0, 0, 0, 50), rgba(0, 0, 0, 0.1)), url(../src/naruto-kurama.jpg), no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+.div-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    max-width: 100vh;
+    text-align: left;
 }
