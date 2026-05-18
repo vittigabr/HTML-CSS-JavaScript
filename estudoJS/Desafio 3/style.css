@@ -1,7 +1,7 @@
 body{
     font: normal 15pt Arial;
-    background: #1db9e9;
-    color: #fff;
+    background: #1db9e9 ;
+    color: #ffffff ;
 }
 
 header{
@@ -36,6 +36,10 @@ section{
     font-size: 15pt;
     display: flex;
     margin: 0 0 0 190px
+}
+
+#resultado{
+    max-width: 400px;
 }
 
 footer{
