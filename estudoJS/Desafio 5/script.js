@@ -2,6 +2,13 @@ const botaoadd = document.getElementById('botaoAdd')
 const botaofim = document.getElementById('botaoFim')
 let res = document.getElementById('resultado')
 
+// document.addEventListener('keydown', function(event) {
+//     if (event.key === 'Enter') {
+//         console.log('A tecla Enter foi pressionada!');
+//          Chame sua função aqui
+//     }
+// });
+
 botaoadd.addEventListener('keydown' || 'click', adicionar)
 let valores = []
 
