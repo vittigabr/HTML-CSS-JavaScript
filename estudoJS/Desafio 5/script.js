@@ -2,7 +2,7 @@ const botaoadd = document.getElementById('botaoAdd')
 const botaofim = document.getElementById('botaoFim')
 let res = document.getElementById('resultado')
 
-botaoadd.addEventListener('click', adicionar)
+botaoadd.addEventListener('keydown' || 'click', adicionar)
 let valores = []
 
 // função que verifica se existe aquele número no array
@@ -13,6 +13,19 @@ function inLista(numero){
     else{
         return false
     }
+}
+
+function menor(lista){
+    let ordem = lista.sort()
+    let maior = ordem[0]
+    return maior
+}
+
+function maior(lista){
+    let ordem = lista.sort()
+    let ind = ordem.length - 1
+    let menor = ordem[ind]
+    return menor
 }
 
 function adicionar(){
@@ -43,5 +56,8 @@ function adicionar(){
 botaofim.addEventListener('click', finalizar)
 
 function finalizar(){
-    
+    let last = maior(valores)
+    let first = menor(valores)
+    res.innerHTML = `menor: ${first}<br>`
+    res.innerHTML += `maior: ${last}`   
 }
