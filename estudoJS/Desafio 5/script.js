@@ -9,7 +9,7 @@ let res = document.getElementById('resultado')
 //     }
 // });
 
-botaoadd.addEventListener('keydown' || 'click', adicionar)
+botaoadd.addEventListener('click', adicionar)
 let valores = []
 
 // função que verifica se existe aquele número no array
@@ -20,6 +20,23 @@ function inLista(numero){
     else{
         return false
     }
+}
+
+function somar(lista){
+    let soma = 0
+    for(let pos in lista){
+        soma += lista[pos]
+    }
+    return soma
+}
+
+function media(lista){
+    let soma = 0
+    for(let pos in lista){
+        soma += lista[pos]
+    }
+    let media = soma/lista.length
+    return media
 }
 
 function menor(lista){
@@ -63,8 +80,9 @@ function adicionar(){
 botaofim.addEventListener('click', finalizar)
 
 function finalizar(){
-    let last = maior(valores)
-    let first = menor(valores)
-    res.innerHTML = `menor: ${first}<br>`
-    res.innerHTML += `maior: ${last}`   
+    res.innerHTML = `Ao todo, temos ${valores.length} números; <br>`
+    res.innerHTML += `menor: ${menor(valores)}; <br>`
+    res.innerHTML += `maior: ${maior(valores)}; <br>`
+    res.innerHTML += `A soma dos números é ${somar(valores)}; <br>`
+    res.innerHTML += `A média dos números é ${media(valores)}`
 }
