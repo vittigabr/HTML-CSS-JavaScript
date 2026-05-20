@@ -22,6 +22,7 @@ function inLista(numero){
     }
 }
 
+// finção que soma os elementos dentro da lista
 function somar(lista){
     let soma = 0
     for(let pos in lista){
@@ -30,6 +31,7 @@ function somar(lista){
     return soma
 }
 
+// função que faz media dos elementos da lista
 function media(lista){
     let soma = 0
     for(let pos in lista){
@@ -39,12 +41,14 @@ function media(lista){
     return media
 }
 
+// função que diz qual o menor número da lista
 function menor(lista){
     let ordem = lista.sort()
     let maior = ordem[0]
     return maior
 }
 
+// função que diz qual o maior número da lista
 function maior(lista){
     let ordem = lista.sort()
     let ind = ordem.length - 1
