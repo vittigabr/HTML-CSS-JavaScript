@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.section{
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #aaaaaa;
+}
+
+.login-section{
+    margin-bottom: 400px;
+}
+
+.div-container h2{
+    font-size: 30px;
+}
+
+.div-container h2, p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container{
+    font-weight: 600;
+    font-size: 18px;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+
+.botao{
+    background-color: #007ef5;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #cfcfcf;
+}
+
+.clique{
+    color: #0011ff;
+}
+
+.cadastro-section{
+    height: 550px;
+}
+
+.termos{
+    font-size: 15px;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+
+.condicoes{
+    font-size: 13px;
+    text-align: left;
+    color: #757575;
+    margin-top: -15px;
+}
+
+span{
+    color: #007ef5;
+}
