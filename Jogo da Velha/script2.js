@@ -5,6 +5,6 @@ botao.forEach( indice => {
 })
 
 function clicar(event){
-    let item = event.document.createElement('value')
+    let item = event.document.createAttribute('value')
     item = 'X'
 }
