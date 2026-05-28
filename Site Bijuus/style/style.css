@@ -30,7 +30,7 @@ body{
 .menu a{
     text-decoration: none;
     color: #fff;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .menu a:hover{
@@ -86,6 +86,81 @@ body{
 .logo span{
     color: #da2424;
 }
+
+/* parte carrossel */
+.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+    padding: 0 !important;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slide-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.slide-box img{
+    width: 100%;
+    height: 1100px;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 45%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #ff0000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #ff0000;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #ff0000;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+    margin-right: 25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+    margin-right: 50%;
+}
+
+
+/* corpo do site */
 
 .todas-bijuu{
     display: flex;
