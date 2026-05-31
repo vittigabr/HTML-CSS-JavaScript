@@ -1,0 +1,38 @@
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+#bntA{
+    position: absolute;
+}
+
+#bntP{
+    margin-left: 93.5%;
+    position: absolute;
+}
+
+.carrossel{
+    display: flex;
+    width: 400%;
+}
+
+.semana{
+    margin: auto;
+}
+
+/* .semana1{
+    margin: auto;
+}
+
+.semana2{
+    margin: auto;
+}
+
+.semana3{
+    margin: auto;
+}
+
+.semana4{
+    margin: auto;
+} */
