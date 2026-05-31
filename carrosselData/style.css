@@ -17,8 +17,13 @@ section{
     width: 400%;
 }
 
+.selecionada{
+    transition: 0.3s;
+}
+
 .semana{
     margin: auto;
+    transition: 0.3s;
 }
 
 /* .semana1{
