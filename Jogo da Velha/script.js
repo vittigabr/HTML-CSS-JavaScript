@@ -8,3 +8,19 @@ escolha.forEach(item => {
 function clicar(event){
     event.target.innerText = 'X'
 }
+
+// funcionou a troca de tema do fundo **só precisa adicionar mais config para mudar todos os elementos do site
+const botao = document.getElementById('bnt')
+const back = document.body.classList
+
+botao.addEventListener('click', changeColor)
+
+function changeColor(){
+    console.log('funciona')
+    if(back.contains('darkBody')){
+        back.remove('darkBody')
+    }
+    else{
+        back.add('darkBody')
+    }
+}
