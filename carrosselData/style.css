@@ -1,29 +1,29 @@
 section{
     width: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-#bntA{
+#linkA{
     position: absolute;
 }
 
-#bntP{
-    margin-left: 93.5%;
+#linkP{
+    display: flex;
+    justify-self: end;
     position: absolute;
 }
 
 .carrossel{
     display: flex;
     width: 400%;
-}
-
-.selecionada{
-    transition: 0.3s;
+    margin: auto;
 }
 
 .semana{
-    margin: auto;
-    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /* .semana1{
