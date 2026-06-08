@@ -27,6 +27,7 @@ function anterior(){
 // Introdução das datas
 const meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 let agora = new Date()
+let dia = agora.getDate()
 let day = 1
 let month = agora.getUTCMonth()
 let mes = meses[month]
@@ -35,29 +36,39 @@ const datas = document.querySelectorAll('.dia')
 let d = 0
 let m = 1
 for(let c = 0; c<=datas.length; c++){
-    if(mes=='Jan' || mes=='Mar' || mes=='Mai' || mes=='Jul' || mes=='Ago' || mes=='Out' || mes=='Dez'){
-        if(day+d>31){
-            d = 0
-            mes = meses[month+m]
-            m++
-        }
-        datas[c].setAttribute('value', `${day+d}/${mes}`)
+    // datas[c].setAttribute('value', `${dia+d}/${mes}`)
+    if(month%2==0 && dia+d<32){
+        datas[c].setAttribute('value', `${dia+d}/${mes}`)
     }
-    else if(mes=='Fev'){
-        if(day+d>28){
-            d = 0
-            mes = meses[month+m]
-            m++
-        }
-        datas[c].setAttribute('value', `${day+d}/${mes}`)
+    else if(month%2==1 && dia+d<31){
+        datas[c].setAttribute('value', `${dia+d}/${mes}`)
     }
     else{
-        if(day+d>30){
-            d = 0
-            mes = meses[month+m]
-            m++
-        }
-        datas[c].setAttribute('value', `${day+d}/${mes}`)
+        let i = 0
+        mes = meses[month+1]
+        datas[c].setAttribute('value', `${day+i}/${mes}`)
     }
+    // else{
+    //     if(month%2==0 && dia+d<32){
+    //         d = 0
+    //         mes = meses[month+m]
+    //         m++
+    //         datas[c].setAttribute('value', `${day}/${mes}`)
+    //     }
+    //     else if(mes=='Fev' && day+d>28){
+    //         d = 0
+    //         mes = meses[month+m]
+    //         m++
+    //         datas[c].setAttribute('value', `${day+d}/${mes}`)
+    //     }
+    //     else{
+    //         if(day+d>30){
+    //             d = 0
+    //             mes = meses[month+m]
+    //             m++
+    //         }
+    //         datas[c].setAttribute('value', `${day+d}/${mes}`)
+    //     }
+    // }
     d++
 }
