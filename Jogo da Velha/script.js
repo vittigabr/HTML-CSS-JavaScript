@@ -16,7 +16,7 @@ const back = document.body.classList
 botao.addEventListener('click', changeColor)
 
 function changeColor(){
-    console.log('funciona')
+    // console.log('funciona')
     if(back.contains('darkBody')){
         back.remove('darkBody')
     }
