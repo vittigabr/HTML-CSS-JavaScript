@@ -25,19 +25,39 @@ function anterior(){
 }
 
 // Introdução das datas
-const meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+const meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 let agora = new Date()
-let dia = agora.getDate()
+let day = 1
 let month = agora.getUTCMonth()
-let mes = meses[month-1]
+let mes = meses[month]
 const datas = document.querySelectorAll('.dia')
 
+let d = 0
+let m = 1
 for(let c = 0; c<=datas.length; c++){
-    datas[c].setAttribute('value', `${dia}/${mes}`)
+    if(mes=='Jan' || mes=='Mar' || mes=='Mai' || mes=='Jul' || mes=='Ago' || mes=='Out' || mes=='Dez'){
+        if(day+d>31){
+            d = 0
+            mes = meses[month+m]
+            m++
+        }
+        datas[c].setAttribute('value', `${day+d}/${mes}`)
+    }
+    else if(mes=='Fev'){
+        if(day+d>28){
+            d = 0
+            mes = meses[month+m]
+            m++
+        }
+        datas[c].setAttribute('value', `${day+d}/${mes}`)
+    }
+    else{
+        if(day+d>30){
+            d = 0
+            mes = meses[month+m]
+            m++
+        }
+        datas[c].setAttribute('value', `${day+d}/${mes}`)
+    }
+    d++
 }
-
-
-
-console.log(mes)
-console.log(dia)
-console.log(dia, mes)
