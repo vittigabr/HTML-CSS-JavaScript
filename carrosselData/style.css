@@ -4,6 +4,10 @@ section{
     scroll-behavior: smooth;
 }
 
+.bnt{
+    font-size: 20px;
+}
+
 #linkA{
     position: absolute;
 }
@@ -25,24 +29,18 @@ section{
     display: flex;
     justify-content: center;
     width: 100%;
+    gap: 20px;
 }
 
 a{
     text-decoration: none;
 }
 
-/* .semana1{
-    margin: auto;
+input{
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 20px;
+    border: 2px solid #FFA726;
+    line-height: 20px;
 }
-
-.semana2{
-    margin: auto;
-}
-
-.semana3{
-    margin: auto;
-}
-
-.semana4{
-    margin: auto;
-} */
