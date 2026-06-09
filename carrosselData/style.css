@@ -1,10 +1,14 @@
+body{
+    background-color: black;
+}
+
 section{
     width: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
-.bnt{
+#bntA, #bntP{
     font-size: 20px;
 }
 
@@ -21,7 +25,7 @@ section{
 .carrossel{
     display: flex;
     /* width: 1200%; */
-    width: 800%;
+    width: 300%;
     margin: auto;
 }
 
@@ -32,15 +36,20 @@ section{
     gap: 20px;
 }
 
+.seleciona{
+    color: #000;
+    background-color: #ff9d00;
+}
+
 a{
     text-decoration: none;
 }
 
 input{
     font-size: 20px;
-    color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    color: #ff9d00;
+    background-color: #000;
     border-radius: 20px;
     border: 2px solid #FFA726;
-    line-height: 20px;
+    transition: 0.3s;
 }

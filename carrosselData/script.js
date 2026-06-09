@@ -45,3 +45,6 @@ for(let c = 0; c<=datas.length; c++){
     }
     d++
 }
+
+// Data selecionada
+datas.addEventListener('click')
