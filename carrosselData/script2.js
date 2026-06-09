@@ -35,19 +35,16 @@ const datas = document.querySelectorAll('.dia')
 
 let d = 0
 let m = 1
+let i = 0
 for(let c = 0; c<=datas.length; c++){
     // datas[c].setAttribute('value', `${dia+d}/${mes}`)
-    if(month%2==0 && dia+d<32){
+    if(month%2==0 || mes=='Ago' && dia+d<32){
         datas[c].setAttribute('value', `${dia+d}/${mes}`)
     }
     else if(month%2==1 && dia+d<31){
         datas[c].setAttribute('value', `${dia+d}/${mes}`)
     }
-    else{
-        let i = 0
-        mes = meses[month+1]
-        datas[c].setAttribute('value', `${day+i}/${mes}`)
-    }
+    
     // else{
     //     if(month%2==0 && dia+d<32){
     //         d = 0

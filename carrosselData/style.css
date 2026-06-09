@@ -16,7 +16,8 @@ section{
 
 .carrossel{
     display: flex;
-    width: 1200%;
+    /* width: 1200%; */
+    width: 800%;
     margin: auto;
 }
 
