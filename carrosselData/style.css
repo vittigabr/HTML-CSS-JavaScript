@@ -25,7 +25,8 @@ section{
 .carrossel{
     display: flex;
     /* width: 1200%; */
-    width: 300%;
+    width: 800%;
+    /* width: 300%; */
     margin: auto;
 }
 
@@ -36,7 +37,7 @@ section{
     gap: 20px;
 }
 
-.seleciona{
+.selecionado{
     color: #000;
     background-color: #ff9d00;
 }
@@ -52,4 +53,9 @@ input{
     border-radius: 20px;
     border: 2px solid #FFA726;
     transition: 0.3s;
+}
+
+input:hover{
+    background-color: #ccc;
+    color: #000;
 }
