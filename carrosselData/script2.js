@@ -130,3 +130,13 @@ for(let c = 0; c<=datas.length; c++){
 //     diaSelecionado.classList.remove('selecionado')
 //     datas[indice].classList.add('selecionado')
 // }
+
+
+// Quinta ideia
+// datas.forEach((data, indice) => {
+//     data.addEventListener('click', () => {
+//         const diaSelecionado = document.querySelector('.dia.selecionado')
+//         diaSelecionado.classList.remove('selecionado')
+//         datas[indice].classList.add('selecionado')
+//     })
+// })
