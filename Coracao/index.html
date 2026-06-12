@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração</title>
+    <style>
+        /* Estilo incial */
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Estilo coração */
+        .coracao{
+            position: absolute;
+            width: 100px;
+            height: 90px;
+        }
+
+        .coracao::before, .coracao::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 50px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .coracao::after{
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        /* caixa */
+        .caixa{
+            position:absolute;
+            width: 300px;
+            height: 270px;
+            z-index: 10;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .caixaPos2{
+            position:absolute;
+            width: 300px;
+            height: 270px;
+            z-index: 10;
+            background-color: aqua;
+            display: flex;
+            justify-content: end;
+            border-radius: 10px;
+        }
+
+        .caixaVazia{
+            display: none;
+        }
+        
+        button{
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .bnt{
+            margin: 0 10px 10px 0;
+            align-self: end;
+        }
+
+        /* texto */
+        p{
+            top: -10px;
+            left: 10px;
+            position: relative;
+            font-size: 13px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <button class="" id="bnt">Clique aqui</button>
+    </div>
+    <div class="coracao"></div>
+    <p>TE AMO MEU AMOR</p>
+    
+    <script>
+        const caixa = document.querySelector('.caixa')
+        const botao = document.getElementById('bnt')
+
+        botao.addEventListener('click', () => {
+            botao.classList.add('bnt')
+            caixa.classList.add('caixaPos2')
+            
+            if(botao.innerText=='voltar'){
+                caixa.classList.remove('caixaPos2')
+                caixa.classList.add('caixaVazia')
+            }
+
+            botao.innerText = 'voltar'
+        })
+    </script>
+</body>
+</html>
