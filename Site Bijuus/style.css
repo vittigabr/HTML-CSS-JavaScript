@@ -8,6 +8,8 @@ body{
     width: 100%;
 }
 
+/* .personagem */
+
 .menu-botoes{
     display: flex;
     justify-content: end;
@@ -42,38 +44,38 @@ body{
     border-radius: 50%;
 }
 
-.shukaku.selecionado{
+.botao.shukaku.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.matatabi.selecionado{
+.botao.matatabi.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.isobu.selecionado{
+.botao.isobu.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.sonGoku.selecionado{
+.botao.sonGoku.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.kokuo.selecionado{
+.botao.kokuo.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.saiken.selecionado{
+.botao.saiken.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.chomei.selecionado{
+.botao.chomei.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.gyuuki.selecionado{
+.botao.gyuuki.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
 
-.kurama.selecionado{
+.botao.kurama.selecionado{
     box-shadow: 0px 0px 10px 3px #f5bf1f;
 }
