@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
     <title>Calculadora</title>
 </head>
 <body id="body-div" class="light-theme">
@@ -13,41 +12,42 @@
     <section class="background">
         <section class="numeros">
             <div class="visor">
-                <h1>visor</h1>
+                <p id="resposta"></p>
             </div>
             <div class="botao-numeros">
-                <div class="sete-nove">
-                    <button><p><img src="assets/Clear Symbol.png" alt=""></p></button>
-                    <button><p>CE</p></button>
-                    <button><p>%</p></button>
-                    <button><p><img src="assets/Divide.png" alt=""></p></button>
+                <div class="clear">
+                    <button><img src="assets/Clear Symbol.png" alt=""></button>
+                    <button>CE</button>
+                    <button>%</button>
+                    <button id="botaoDivisao"><img src="assets/Divide.png" alt=""></button>
                 </div>
                 <div class="sete-nove">
-                    <button><p>7</p></button>
-                    <button><p>8</p></button>
-                    <button><p>9</p></button>
-                    <button><p><img src="assets/Multiply.png" alt=""></p></button>
+                    <button class="bnt">7</button>
+                    <button class="bnt">8</button>
+                    <button class="bnt">9</button>
+                    <button id="botaoMulti"><img src="assets/Multiply.png" alt=""></button>
                 </div>
                 <div class="quatro-seis">
-                    <button><p>4</p></button>
-                    <button><p>5</p></button>
-                    <button><p>6</p></button>
-                    <button><p><img src="assets/Subtract.png" alt=""></p></button>
+                    <button class="bnt">4</button>
+                    <button class="bnt">5</button>
+                    <button class="bnt">6</button>
+                    <button id="botaoSubtracao"><img src="assets/Subtract.png" alt=""></button>
                 </div>
                 <div class="um-tres">
-                    <button><p>1</p></button>
-                    <button><p>2</p></button>
-                    <button><p>3</p></button>
-                    <button><p><img src="assets/Plus Math.png" alt=""></p></button>
+                    <button class="bnt">1</button>
+                    <button class="bnt">2</button>
+                    <button class="bnt">3</button>
+                    <button id="botaoSoma"><img src="assets/Plus Math.png" alt=""></button>
                 </div>
                 <div class="zero-sinal">
-                    <button><p>+/-</p></button>
-                    <button><p>0</p></button>
-                    <button><p>,</p></button>
-                    <button><p><img src="assets/Equal Sign.png" alt=""></p></button>
+                    <button>+/-</button>
+                    <button class="bnt">0</button>
+                    <button>,</button>
+                    <button><img src="assets/Equal Sign.png" alt=""></button>
                 </div>
             </div>
         </section>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
