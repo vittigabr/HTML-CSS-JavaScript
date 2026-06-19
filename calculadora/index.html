@@ -7,8 +7,6 @@
     <title>Calculadora</title>
 </head>
 <body id="body-div" class="light-theme">
-    <!-- <button id="btn" onclick="changeColor()">Mudar Cor</button> -->
-    <input type="button" onclick="changeColor()" value="color" id="bnt">
     <section class="background">
         <section class="numeros">
             <div class="visor">
@@ -16,8 +14,8 @@
             </div>
             <div class="botao-numeros">
                 <div class="clear">
-                    <button><img src="assets/Clear Symbol.png" alt=""></button>
-                    <button>CE</button>
+                    <button id="clear"><img src="assets/Clear Symbol.png" alt=""></button>
+                    <button id="cancela">CE</button>
                     <button>%</button>
                     <button id="botaoDivisao"><img src="assets/Divide.png" alt=""></button>
                 </div>
@@ -42,8 +40,8 @@
                 <div class="zero-sinal">
                     <button>+/-</button>
                     <button class="bnt">0</button>
-                    <button>,</button>
-                    <button><img src="assets/Equal Sign.png" alt=""></button>
+                    <button>.</button>
+                    <button id="equal"><img src="assets/Equal Sign.png" alt=""></button>
                 </div>
             </div>
         </section>

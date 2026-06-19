@@ -5,12 +5,13 @@
 
 body{
     height: 100%;
+    overflow: hidden;
 }
 
 .background{
     display: grid;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .visor{
