@@ -7,6 +7,13 @@ body{
     height: 100%;
     overflow: hidden;
 }
+.lightTheme{
+    background-color: #fff;
+}
+
+.darkTheme{
+    background-color: #414141;
+}
 
 .background{
     display: grid;
@@ -15,7 +22,7 @@ body{
 }
 
 .visor{
-    background-color: greenyellow;
+    background-color: #c2c2c2;
     text-align: center;
     width: 480px;
     height: 50px;
@@ -23,10 +30,13 @@ body{
     margin-top: 40px;
     padding: 10px;
     font-size: 40px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #303030;
+    border-radius: 15px;
 }
 
 .numeros{
-    background-color:grey;
+    background-color:#b3b3b3;
     margin-bottom: 200px;
     width: 600px;
     height: 600px;
@@ -65,14 +75,37 @@ body{
 }
 
 button{
-    width: 400px;
+    width: 110px;
     text-align: center;
-    background-color: white;
+    background-color: #c2c2c2;
     font-size: 30px;
     padding: 20px;
+    transition: 0.3s;
+    border: none;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: #8d8d8d;
 }
 
 img{
     height: 40px;
     width: 40px;
+}
+
+.bnt{
+    background-color: #ffbec9;
+}
+
+.bnt-dark{
+    background-color: #495ab9;
+}
+
+.botaoEspecial-light{
+    background-color: #fd9faf;
+}
+
+.botaoEspecial-dark{
+    background-color: #162994;
 }
