@@ -9,6 +9,7 @@ const bCancel = document.getElementById('cancela')
 const bApaga = document.getElementById('clear')
 const bPorcent = document.getElementById('porcentagem')
 const bColor = document.getElementById('color')
+const bPonto = document.getElementById('ponto')
 let numero1 = 0
 let numero2 = 0
 
@@ -35,7 +36,11 @@ bDivisao.addEventListener('click', () => {
 })
 
 bPorcent.addEventListener('click', () => {
-    visor.innerText += '%'
+    visor.innerText += '/100'
+})
+
+bPonto.addEventListener('click', () => {
+    visor.innerText += '.'
 })
 
 bIgual.addEventListener('click', () => {
