@@ -30,6 +30,7 @@ function escolhaCasa(){
         if(randomElement.innerText===''){
             randomElement.innerText = 'O'
             current--
+            contador++
         }
     }
 }
@@ -37,8 +38,11 @@ function escolhaCasa(){
 casas.forEach((casa, index) => {
     casa.addEventListener('click', () => {
         if(current==0){
-            casa.innerText = 'X'
-            current++
+            if(casa.innerText===''){
+                casa.innerText = 'X'
+                current++
+                contador++
+            }
         }
         else{
             escolhaCasa()
@@ -82,7 +86,7 @@ casas.forEach((casa, index) => {
             resultado.innerText += ' Ganhador O'
             zerarCasas()
         }
-        contador++
+        
         if(contador==9){
             zerarCasas()
         }

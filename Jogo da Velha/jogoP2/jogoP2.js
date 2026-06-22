@@ -22,12 +22,18 @@ function zerarCasas(){
 casas.forEach((casa, index) => {
     casa.addEventListener('click', () => {
         if(current==0){
-            casa.innerText = 'X'
-            current++
+            if(casa.innerText===''){
+                casa.innerText = 'X'
+                current++
+                contador++
+            }
         }
         else{
-            casa.innerText = 'O'
-            current--
+            if(casa.innerText===''){
+                casa.innerText = 'O'
+                current--
+                contador++
+            }
         }
 
         if((casas[0].innerText=='X' && casas[1].innerText=='X' && casas[2].innerText=='X') || 
@@ -68,7 +74,7 @@ casas.forEach((casa, index) => {
             resultado.innerText += ' Ganhador O'
             zerarCasas()
         }
-        contador++
+        
         if(contador==9){
             zerarCasas()
         }
