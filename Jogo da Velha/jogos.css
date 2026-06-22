@@ -23,6 +23,25 @@ main{
     border-radius: 15px;
 }
 
+.bntVoltar{
+    background-color: #fff;
+    padding: 8px;
+    width: 100px;
+    font-size: 20px;
+    align-self: flex-start;
+    text-align: center;
+    text-decoration: none;
+    color: #088159;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin-left: 2px;
+}
+
+.bntVoltar:hover{
+    background-color: #088159;
+    color: #fff;
+}
+
 .score{
     display: flex;
     height: 70px;
