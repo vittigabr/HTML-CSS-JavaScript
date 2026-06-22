@@ -3,58 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100%;
     display: flex;
     justify-content: center;
 }
+
 main{
     width: 50%;
-    height: 700px;
-    margin-top: 50px;
-}
-
-.tabuleiro{
+    height: 750px;
+    margin-top: 30px;
     background-color: #7fffd4;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.score{
-    display: flex;
-    height: 100px;
     gap: 50px;
+    border-radius: 15px;
 }
 
-.placar{
-    background-color: #e9cccc;
-    width: 150px;
-    height: 60%;
-    text-align: start;
-    font-size: 50px;
+.escolha{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
 }
 
-.placar p{
-    margin-left: 10px;
-}
-
-.jogo{
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    width: 80%;
-    height: 80%;
-    justify-items: center;
-    align-items: center;
-    background-color: #1cb17f;
-}
-
-.casa{
-    background-color: blue;
+a{
+    background-color: #fff;
+    padding: 30px;
+    width: 500px;
     text-align: center;
-    width: 220px; 
-    height: 180px;
-    font-size: 130px;
+    text-decoration: none;
+    color: #088159;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+a:hover{
+    transform: translateY(-8px);
+    background-color: #088159;
+    color: #fff;
 }
