@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: #202020;
+}
+
+/* cabeçalho e menu de navegação */
+.cabecalho{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{  
+    color: #fff;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo span{
+    color: #ffd900;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.menuNav{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.menuNav a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.menuNav a:hover, .item.selecionado{
+    color: #ffd900;
+    border: 2px solid #ffd900;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botaoNav{
+    background-color: #ffd900;
+    display: flex;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    color: #000;
+    border-radius: 10px;
+}
+
+.botaoNav:hover, .botaoHero:hover{
+    background-color: #f1d326;
+}
+
+/* home/hero */
+#home{
+    background-image: url(assets/hero.png);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: -300px;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tituloHero{
+    width: 400px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.tituloHero span{
+    color: #ffd900;
+}
+
+.textoHero{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.botaoHero{
+    background-color: #ffd900;
+    display: flex;
+    width: 220px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+    color: #000;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.beneficios{
+    display: flex;
+    width: 100%;
+}
