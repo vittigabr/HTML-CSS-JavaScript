@@ -95,7 +95,7 @@ bApaga.addEventListener('click', () => {
     visor.innerText = txtNumero.join('') // transforma o array em string
 })
 
-bColor.addEventListener('click', () => {
+bColor.addEventListener('click', () => { // add classes para mudar as cores da calculadora
     let background = document.body.classList
     const botoesEspeciais = document.querySelectorAll('.botaoEspecial-light')
     if(background.contains('lightTheme')){
