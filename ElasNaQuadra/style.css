@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #ff5a1f;
+    --preto: #080808;
+    --claro: #f5f1e8;
+    --fonte: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    background-color: var(--preto);
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    border-bottom: 0.01px solid #F5F1E8;
+    background-color: transparent;
+}
+
+.menu nav{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: var(--claro);
+    font-size: 13px;
+}
+
+.link{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.link a{
+    text-decoration: none;
+    font-family: var(--fonte);
+    color: var(--claro);
+}
+
+.hero{
+    margin-top: 10px;
+    background-image: url(assets/hero-basquete-feminino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    background-position: right;
+}
+
+.container{
+    color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: left;
+    margin-left: 40px;
+    font-family: var(--fonte);
+}
+
+.subtitulo{
+    color: var(--laranja);
+    font-size: 12px;
+}
+
+.titulo{
+    font-size: 80px;
+    line-height: 145px;
+}
+
+.titulo span{
+    color: var(--laranja);
+}
+
+.conteudo{
+    margin-left: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 490px;
+    line-height: 40px;
+    border-left: 2px solid var(--laranja);
+}
