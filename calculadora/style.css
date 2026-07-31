@@ -48,32 +48,40 @@ body{
 }
 
 .botao-numeros{
+    display: flex;
+    flex-direction: column;
     width: 500px;
+    gap: 5px;
 }
 
 .zero-sinal{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .um-tres{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .quatro-seis{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .sete-nove{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .clear{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 button{
