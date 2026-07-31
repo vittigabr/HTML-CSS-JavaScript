@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #ff5a1f;
+    --preto: #080808;
+    --claro: #f5f1e8;
+    --fonte: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    background-color: var(--preto);
+    font-family: var(--fonte);
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    border-bottom: 0.01px solid #303030;
+    background-color: transparent;
+}
+
+.menu nav{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: var(--claro);
+    font-size: 13px;
+}
+
+.link{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+}
+
+.link a{
+    text-decoration: none;
+    font-family: var(--fonte);
+    color: var(--claro);
+}
+
+.hero{
+    margin-top: 10px;
+    background-image: url(assets/hero-basquete-feminino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 50% 50%;
+    background-position: right;
+}
+
+.container{
+    color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    align-items: left;
+    margin-left: 40px;
+    font-family: var(--fonte);
+}
+
+.subtitulo{
+    color: var(--laranja);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.titulo{
+    font-size: 80px;
+    line-height: 145px;
+}
+
+.titulo span{
+    color: var(--laranja);
+}
+
+.conteudo{
+    margin-left: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 490px;
+    line-height: 40px;
+    border-left: 2px solid var(--laranja);
+}
+
+.botaoHero{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    text-decoration: none;
+    color: var(--claro);
+    padding: 20px;
+    border: 1px solid var(--claro);
+    background-color: #181818;
+    transition: 0.3s;
+}
+
+.botaoHero span{
+    margin-left: 20px;
+    color: var(--laranja);
+}
+
+.botaoHero:hover{
+    background-color: #303030;
+}
+
+.tabela{
+    height: 100px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color: #f5f1e8;
+    background-color: #111111;
+}
+
+.tabela div{
+    border: 1px solid #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabela div p{
+    margin-left: 20px;
+}
+
+.numero{
+    color: var(--laranja);
+    font-size: 40px;
+}
+
+.times{
+    background-color: var(--claro);
+}
+
+.tituloTime{
+    margin-left: 100px;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 50px;
+    height: 150px;
+    align-items: end;
+}
+
+.aviso{
+    font-size: 15px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    color: #949494;
+}
+
+.selecoes{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    gap: 70px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 300px;
+    height: 390px;
+    background-color: #c7c7c7;
+    margin-bottom: 20px;
+}
+
+.cardTitulo{
+    margin-left: 20px;
+}
+
+.card img{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.pais{
+    color: #707070;
+    margin-left: 20px;
+}
+
+.cardSubtitulo{
+    color: var(--laranja);
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 20px;
+}

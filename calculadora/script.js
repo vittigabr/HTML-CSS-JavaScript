@@ -15,32 +15,32 @@ let numero2 = 0
 
 botoes.forEach((botao, index) => {
     botao.addEventListener('click', () => {
-        visor.innerText += botoes[index].innerText
+        visor.innerText += botoes[index].innerText // digita no visor de acordo com o que tá escrito no botão
     })
 })
 
 bSoma.addEventListener('click', () => {
-    visor.innerText += '+'
+    visor.innerText += '+' // adiciona um + na frente do escrito no visor
 })
 
 bSubtra.addEventListener('click', () => {
-    visor.innerText += '-'
+    visor.innerText += '-' // adiciona um - na frente do escrito no visor
 })
 
 bMulti.addEventListener('click', () => {
-    visor.innerText += '*'
+    visor.innerText += '*' // adiciona um * na frente do escrito no visor
 })
 
 bDivisao.addEventListener('click', () => {
-    visor.innerText += '/'
+    visor.innerText += '/' // adiciona um / na frente do escrito no visor
 })
 
 bPorcent.addEventListener('click', () => {
-    visor.innerText += '/100'
+    visor.innerText += '/100' // adiciona um /100 na frente do escrito no visor
 })
 
 bPonto.addEventListener('click', () => {
-    visor.innerText += '.'
+    visor.innerText += '.' // adiciona um . na frente do escrito no visor
 })
 
 bIgual.addEventListener('click', () => {
@@ -78,7 +78,7 @@ bIgual.addEventListener('click', () => {
     //     visor.innerText = 'Error'
     // }
     try{
-        visor.innerText = eval(visor.innerText)
+        visor.innerText = eval(visor.innerText) // eval é uma função que faz a conta de acordo com a operação mesmo sendo string
     }
     catch{
         visor.innerText = 'Erro'
@@ -86,16 +86,16 @@ bIgual.addEventListener('click', () => {
 })
 
 bCancel.addEventListener('click', () => {
-    visor.innerText = ''
+    visor.innerText = '' // limpa todo o visor
 })
 
 bApaga.addEventListener('click', () => {
-    let txtNumero = visor.innerText.split('')
-    txtNumero.pop()
-    visor.innerText = txtNumero.join('')
+    let txtNumero = visor.innerText.split('') // transforma todo o visor em um array
+    txtNumero.pop() // apaga somente o último index do array
+    visor.innerText = txtNumero.join('') // transforma o array em string
 })
 
-bColor.addEventListener('click', () => {
+bColor.addEventListener('click', () => { // add classes para mudar as cores da calculadora
     let background = document.body.classList
     const botoesEspeciais = document.querySelectorAll('.botaoEspecial-light')
     if(background.contains('lightTheme')){

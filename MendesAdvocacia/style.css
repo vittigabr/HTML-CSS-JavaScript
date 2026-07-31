@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul: #0B3F69;
+    --fonte: "Inter", sans-serif;
+    --botaoDourado: #D4AA5B;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    display: flex;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+}
+
+.imgLogo{
+    background-color: var(--azul);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.navegacao a{
+    text-decoration: none;
+    font-family: var(--fonte);
+    color: var(--azul);
+}
+
+.linksNav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.telefone{
+    width: 200px;
+    height: 58px;   
+    font-family: var(--fonte);
+    color: var(--azul);
+    display: grid;
+    grid-template-columns: 15% 70%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.5px 0.5px 20px 1px #cccccc;
+    border-radius: 50px;
+}
+
+#home{
+    background-color: #0b3f69f1;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpoHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 170px;
+    gap: 30px;
+}
+
+.barraHome{
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    background-color: #ffffff33;
+    border-radius: 50px;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-family: var(--fonte);
+    font-size: 15px;
+}
+
+.barraHome img{
+    width: 20px;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.tituloHome{
+    font-size: 55px;
+    width: 1200px;
+    text-align: left;
+    color: #fff;
+}
+
+.tituloHome h1{
+    width: 1100px;
+}
+
+.tituloHome span{
+    color: var(--azul);
+}
+
+.conteudoHome{
+    color: #fff;
+    font-family: var(--fonte);
+    font-size: 16px;
+    width: 1200px;
+    text-align: left;
+}
+
+.conteudoHome p{
+    width: 650px;
+}
+
+.botoes{
+    width: 1200px;
+    display: flex;
+    gap: 50px;
+}
+
+.botaoDourado, .botaoConsulta{
+    font-family: var(--fonte);
+    width: 230px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    border-radius: 50px;
+}
+
+.botaoDourado span, .botaoConsulta span{
+    font-size: 30px;
+}
+
+.botaoDourado{
+    background-color: var(--botaoDourado);
+}
+
+.botaoConsulta{
+    color: #fff;
+    background-color: #ffffff33;
+}
+
+.tabela{
+    font-family: var(--fonte);
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    color: #fff;
+    gap: 50px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff33;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.numero{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+
+.rolar{
+    font-family: var(--fonte);
+    color: #fff;
+}
+
+.tituloSobre{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte);
+    color: var(--azul);
+}
+
+.paginaSobre{
+    font-size: 14px;
+}
+
+.temaSobre{
+    font-size: 50px;
+}
+
+.textoSobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemSobre{
+    background-image: url(assets/Image\ \(Escritório\ de\ Advocacia\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+}
+
+.infoImg{
+    display: flex;
+    background-color: #fff;
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.infoImg img{
+    width: 30px;
+    height: 30px;
+}
+
+.topico{
+    font-family: var(--fonte);
+}
+
+.tituloConteudoSobre{
+    margin-bottom: 30px;
+}
+
+.textoConteudoSobre{
+    font-size: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+}
