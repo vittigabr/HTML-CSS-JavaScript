@@ -152,6 +152,9 @@ body{
 
 .times{
     background-color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tituloTime{
