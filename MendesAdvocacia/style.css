@@ -24,7 +24,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 70px;
     position: fixed;
     z-index: 1000;
 }
@@ -280,7 +280,7 @@ html{
     margin-bottom: 30px;
 }
 
-.imgTopico{
+.imgTopico, .imgCard{
     padding: 20px;
     background-color: #cccccc;
     border-radius: 10px;
@@ -290,6 +290,12 @@ html{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+#areas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tituloAreas{
@@ -309,4 +315,105 @@ html{
 
 .temaAreas{
     font-size: 50px;
+}
+
+.subtituloAreas{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.card{
+    width: 330px;
+    height: 300px;
+    box-shadow: 0.5px 0.5px 20px 1px #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.cardsProfissionais{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.cardProfissional{
+    height: 500px;
+    width: 370px;
+    box-shadow: 0.5px 0.5px 20px 1px #cccccc;
+    border-radius: 10px;
+}
+
+.imgProfissional1{
+    background-image: url(assets/Image\ \(Dr.\ Carlos\ Mendes\).png);
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 370px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgProfissional2{
+    background-image: url(assets/Image\ \(Dra.\ Ana\ Silva\).png);
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 370px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgProfissional3{
+    background-image: url(assets/Image\ \(Dr.\ Rafael\ Oliveira\).png);
+    background-repeat: no-repeat;
+    height: 320px;
+    width: 370px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.infoProfissional{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.infoProfissional div{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.conteudoProfissional{
+    width: 370px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
