@@ -17,12 +17,16 @@ html{
 }
 
 .cabecalho{
+    background-color: #fff;
     display: flex;
+    width: 100%;
     gap: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90px;
+    position: fixed;
+    z-index: 1000;
 }
 
 .logo{
@@ -63,11 +67,16 @@ html{
     justify-content: center;
     box-shadow: 0.5px 0.5px 20px 1px #cccccc;
     border-radius: 50px;
+    transition: 0.3s;
+}
+
+.telefone:hover{
+    background-color: #dedede;
 }
 
 #home{
     background-color: #0b3f69f1;
-    height: 1000px;
+    height: 1180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,14 +200,21 @@ html{
     color: #fff;
 }
 
+#sobre{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
 .tituloSobre{
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: var(--fonte);
     color: var(--azul);
+    margin-top: 50px;
 }
 
 .paginaSobre{
@@ -213,6 +229,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .imagemSobre{
@@ -245,10 +262,6 @@ html{
     height: 30px;
 }
 
-.topico{
-    font-family: var(--fonte);
-}
-
 .tituloConteudoSobre{
     margin-bottom: 30px;
 }
@@ -257,4 +270,43 @@ html{
     font-size: 20px;
     width: 600px;
     margin-bottom: 20px;
+}
+
+.topico{
+    font-family: var(--fonte);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.imgTopico{
+    padding: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.textoTopico{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tituloAreas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte);
+    color: var(--azul);
+    margin-top: 50px;
+}
+
+.paginaAreas{
+    font-size: 14px;
+}
+
+.temaAreas{
+    font-size: 50px;
 }
