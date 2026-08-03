@@ -298,7 +298,7 @@ html{
     align-items: center;
 }
 
-.tituloAreas{
+.tituloAreas, .tituloEquipe{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -309,15 +309,15 @@ html{
     margin-top: 50px;
 }
 
-.paginaAreas{
+.paginaAreas, .paginaEquipe{
     font-size: 14px;
 }
 
-.temaAreas{
+.temaAreas, .temaEquipe{
     font-size: 50px;
 }
 
-.subtituloAreas{
+.subtituloAreas, .subtituloEquipe{
     text-align: center;
     margin-bottom: 50px;
 }
@@ -411,9 +411,10 @@ html{
 }
 
 .conteudoProfissional{
-    width: 370px;
+    width: 360px;
     height: 130px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: 10px;
 }
