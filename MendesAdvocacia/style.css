@@ -10,6 +10,7 @@
     --azul: #0B3F69;
     --fonte: "Inter", sans-serif;
     --botaoDourado: #D4AA5B;
+    --sobra: 0.5px 0.5px 20px 1px #cccccc;
 }
 
 html{
@@ -280,7 +281,7 @@ html{
     margin-bottom: 30px;
 }
 
-.imgTopico, .imgCard{
+.imgTopico, .imgCard, .icone{
     padding: 20px;
     background-color: #cccccc;
     border-radius: 10px;
@@ -417,4 +418,87 @@ html{
     flex-direction: column;
     gap: 10px;
     margin-left: 10px;
+}
+
+#depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentarios{
+    box-shadow: var(--sobra);
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.comentario{
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 30px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--sobra);
+    gap: 10px;
+}
+
+.feedback{
+    color: #6c6c6c;
+}
+
+.usuario{
+    display: flex;
+    gap: 20px;
+}
+
+.userName{
+    font-weight: 600;
+}
+
+.navBarFeed{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navBarFeed p{
+    padding: 20px;
+    border-radius: 100%;
+    box-shadow: var(--sobra);
+}
+
+.informacoesContato{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cardContato{
+    display: flex;
+    gap: 10px;
+    box-shadow: var(--sobra);
+    width: 420px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cardContato h3{
+    font-weight: 600;
+}
+
+.icone{
+    height: 60px;
+}
+
+.conteudoContato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
