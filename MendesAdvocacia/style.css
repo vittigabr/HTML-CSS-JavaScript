@@ -310,6 +310,11 @@ html{
     margin-top: 50px;
 }
 
+i{
+    border: 3px solid #000;
+    width: 100px;
+}
+
 .paginaAreas, .paginaEquipe{
     font-size: 14px;
 }
