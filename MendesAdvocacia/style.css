@@ -17,6 +17,10 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    flex: 1;
+}
+
 .cabecalho{
     background-color: #fff;
     display: flex;
@@ -325,7 +329,11 @@ i{
 
 .subtituloAreas, .subtituloEquipe{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+i{
+    margin-bottom: 40px;
 }
 
 .cards{
@@ -413,7 +421,7 @@ i{
 .infoProfissional div{
     padding: 20px;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .conteudoProfissional{
@@ -483,6 +491,7 @@ i{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .informacoesContato{
@@ -571,6 +580,8 @@ form{
 
 .botaoMensagemDiv{
     width: 470px;
+    display: flex;
+    align-items: center;
 }
 
 .botaoMensagem{
@@ -580,8 +591,47 @@ form{
     height: 70px;
     border-radius: 40px;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botaoMensagem p{
     padding: 10px;
+}
+
+.botaoMensagem img{
+    width: 20px;
+    height: 20px;
+}
+
+footer{
+    background-color: #09121E;
+    width: 100%;
+}
+
+.imgLogoRodape{
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.conteudoLogoRodape{
+    color: #fff;
+}
+
+.infoProfissionalRodape{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.infoProfissionalRodape div{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
 }
