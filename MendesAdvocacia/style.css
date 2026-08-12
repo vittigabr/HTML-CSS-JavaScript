@@ -479,6 +479,12 @@ i{
     box-shadow: var(--sobra);
 }
 
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .informacoesContato{
     display: flex;
     flex-direction: column;
@@ -506,4 +512,76 @@ i{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.contatoInfo{
+    width: 1000px;
+    display: flex;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 50px;
+}
+
+.formsContato{
+    font-family: var(--fonte);
+    height: 550px;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: var(--sobra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    gap: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.form input{
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+input::placeholder{
+    padding: 10px;
+}
+
+form{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}   
+
+.formMensagem{
+    height: 200px;
+    display: flex;
+}
+
+.formMensagem .inputMensagem{
+    width: 470px;
+    height: 250px;
+}
+
+.botaoMensagemDiv{
+    width: 470px;
+}
+
+.botaoMensagem{
+    background-color: var(--botaoDourado);
+    border: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 40px;
+    text-align: left;
+}
+
+.botaoMensagem p{
+    padding: 10px;
 }
