@@ -632,6 +632,10 @@ footer{
 
 .infoProfissionalRodape div{
     padding: 20px;
-    background-color: #fff;
+    background-color: #313131;
     border-radius: 50px;
+}
+
+.logoRodape p{
+    color: #aeaeae;
 }
