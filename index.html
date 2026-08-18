@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Clima</title>
 </head>
 <body>
-    <h1>Entre com seu endereço</h1>
-    <input type="text" name="" id="endereco">
-    <button id="botao">Enviar</button>
-    <script src="index.js"></script>
+    <div class="display">
+        <h1>Previsão Do Tempo</h1>
+        <p>Digite o nome de uma cidade para consultar o clima atual</p>
+        <div class="inserirDados">
+            <input type="text" name="" id="cidade" placeholder="Digite o nome da sua cidade">
+            <button id="buscar">Buscar</button>
+        </div>
+    
+
+        <div class="visualizacaoDados">
+            <h2 id="nomeCidade">
+                Cidade
+            </h2>
+            <p class="temperatura">
+                <span id="temperatura">--</span> °C
+            </p>
+            <p>
+                Clima:
+                <span id="descricao">--</span>
+            </p>
+            <p>
+                Sensação térmica:
+                <span id="sensacao">--</span> °C
+            </p>
+            <p>
+                Umidade:
+                <span id="umidade">--</span>%
+            </p>
+            <p>
+                Vento:
+                <span id="vento">--</span> km/h
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
