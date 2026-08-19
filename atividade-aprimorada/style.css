@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.display{
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px #000;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.display p{
+    color: #757575;
+}
+
+.inserirDados{
+    margin-bottom: 20px;
+}
+
+.inserirDados button{
+    background-color: #4da9ff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.inserirDados button:hover{
+    background-color: #82c2ff;
+}
+
+.inserirDados input{
+    height: 30px;
+    width: 300px;
+}
+
+.visualizacaoDados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.visualizacaoDados p{
+    color: #000;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.temperatura{
+    display: flex;
+    gap: 20px;
+}
+
+.temperaturaMinima{
+    color: #4da9ff;
+}
+
+.temperaturaMaxima{
+    color: #ff0000;
+}
