@@ -17,10 +17,10 @@ body{
     display: flex;
     align-items: center;
     width: 1150px;
-    height: 500px;
+    height: 800px;
     background-color: #fff;
     box-shadow: 5px 5px 30px #000;
-    gap: 10px;
+    gap: 30px;
     border-radius: 20px;
 }
 
@@ -90,4 +90,9 @@ body{
 
 .temperaturaMaxima{
     color: #ff0000;
+}
+
+.chart{
+    width: 500px;
+    height: 500px;
 }
