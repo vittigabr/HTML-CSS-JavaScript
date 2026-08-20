@@ -1,4 +1,5 @@
 const botaoBuscar = document.getElementById("buscar");
+const previsao = require('./grafico')
 
 botaoBuscar.addEventListener("click", buscarClima);
 
@@ -17,20 +18,6 @@ function buscarClima() {
         `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
 
     fetch(url)
-
-        function calcularSunRise(){
-            const timezone = dados.timezone
-            const sunrise = dados.sys.sunrise
-
-            const timestampLocal = (sunrise + timezone) * 1000;
-            const dataLocal = new Date(timestampLocal);
-
-            const hora = dataLocal.getUTCHours().toString().padStart(2, '0');
-            const minuto = dataLocal.getUTCMinutes().toString().padStart(2, '0');
-
-            document.getElementById('horaSunRise').textContent = hora
-            document.getElementById('minutoSunRise').textContent = minuto
-        }
 
         .then(function(resposta) {
 
@@ -60,6 +47,20 @@ function buscarClima() {
             document.getElementById("umidade").textContent =
                 dados.main.humidity;
 
+            function calcularSunRise(){
+                const timezone = dados.timezone
+                const sunrise = dados.sys.sunrise
+
+                const timestampLocal = (sunrise + timezone) * 1000;
+                const dataLocal = new Date(timestampLocal);
+
+                const hora = dataLocal.getUTCHours().toString().padStart(2, '0');
+                const minuto = dataLocal.getUTCMinutes().toString().padStart(2, '0');
+
+                document.getElementById('horaSunRise').textContent = hora
+                document.getElementById('minutoSunRise').textContent = minuto
+            }
+
             calcularSunRise()
 
             function calcularSunSet(){
@@ -72,8 +73,8 @@ function buscarClima() {
                 const hora = dataLocal.getUTCHours().toString().padStart(2, '0');
                 const minuto = dataLocal.getUTCMinutes().toString().padStart(2, '0');
 
-                document.getElementById('horaSunRise').textContent = hora
-                document.getElementById('minutoSunRise').textContent = minuto
+                document.getElementById('horaSunSet').textContent = hora
+                document.getElementById('minutoSunSet').textContent = minuto
             }
             calcularSunSet()
 
@@ -86,6 +87,8 @@ function buscarClima() {
             
             document.getElementById("rajada").textContent =
                 rajadaKmH.toFixed(1);
+
+            previsao()
         })
 
         .catch(function(erro) {
@@ -94,4 +97,15 @@ function buscarClima() {
 
             alert("Não foi possível encontrar a cidade.");
         });
+
+        const latitude = dados.coord.lat
+        const longitude = dados.coord.lon
+
+        const previsaoUrl = `api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${chaveApi}`
+
+        fetch(previsaoUrl)
+
+            .then(function(previsao){
+                console.log(previsao)
+            })
 }
