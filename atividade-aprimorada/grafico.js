@@ -1,5 +1,8 @@
-function previsaoTempo() {
+import { botaoBuscar } from "./tabela";
 
+botaoBuscar.addEventListener('click', previsaoDias)
+
+function previsaoDias() {
     const cidade = document.getElementById("cidade").value.trim();
 
     if (cidade === "") {
@@ -12,44 +15,38 @@ function previsaoTempo() {
     const url =
         `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
 
-    fetch(url)
+        fetch(url)
 
-        .then(function(resposta) {
+            .then(function(resposta) {
 
-            if (!resposta.ok) {
-                throw new Error("Cidade não encontrada.");
-            }
+                if (!resposta.ok) {
+                    throw new Error("Cidade não encontrada.");
+                }
 
-            return resposta.json();
-        })
+                return resposta.json();
+            })
 
-        .then(function(dados) {
-            globalThis.latitude = dados.coord.lat
-            globalThis.longitude = dados.coord.lon
-        })
+            .then (function(dados) {
+                function latitude(){
+                    return dados.coord.lat
+                }
 
-        .catch(function(erro) {
+                function longitute(){
+                    return dados.coord.lon
+                }
+            })
 
-            console.log("Erro:", erro);
+    const latitude = latitude()
 
-            alert("Não foi possível encontrar a cidade.");
-        });
+    const longitude = longitude()
+    
+    const previsaoUrl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&cnt={7}&appid=${chaveApi}`
+    
+        fetch(previsaoUrl)  
 
-    const previsaoUrl = `api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${chaveApi}`
-
-    fetch(previsaoUrl)
-
-        .then(function(resposta) {
-
-            if (!resposta.ok) {
-                throw new Error("Cidade não encontrada.");
-            }
-
-            return resposta.json();
-        })
-
-        .then(function(dados) {
-            console.log(dados)
-        })
+            .then(function(previsao) {
+                for(let i = 0; i<=7; i++){
+                    let lista = 
+                }
+            })
 }
-

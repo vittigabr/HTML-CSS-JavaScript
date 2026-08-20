@@ -1,5 +1,4 @@
-const botaoBuscar = document.getElementById("buscar");
-const previsao = require('./grafico')
+export const botaoBuscar = document.getElementById("buscar");
 
 botaoBuscar.addEventListener("click", buscarClima);
 
@@ -29,7 +28,7 @@ function buscarClima() {
         })
 
         .then(function(dados) {
-
+            
             console.log(dados);
 
             document.getElementById("nomeCidade").textContent =
@@ -87,8 +86,6 @@ function buscarClima() {
             
             document.getElementById("rajada").textContent =
                 rajadaKmH.toFixed(1);
-
-            previsao()
         })
 
         .catch(function(erro) {
@@ -97,15 +94,4 @@ function buscarClima() {
 
             alert("Não foi possível encontrar a cidade.");
         });
-
-        const latitude = dados.coord.lat
-        const longitude = dados.coord.lon
-
-        const previsaoUrl = `api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${chaveApi}`
-
-        fetch(previsaoUrl)
-
-            .then(function(previsao){
-                console.log(previsao)
-            })
 }
