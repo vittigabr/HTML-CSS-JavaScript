@@ -1,52 +1,39 @@
-import { botaoBuscar } from "./tabela";
+// coleta das informações do gráfico
 
-botaoBuscar.addEventListener('click', previsaoDias)
+let lista = []
 
-function previsaoDias() {
-    const cidade = document.getElementById("cidade").value.trim();
+export function previsaoDias(latitude, longitude, chaveApi) {
 
-    if (cidade === "") {
-        alert("Digite o nome de uma cidade.");
-        return;
-    }
+    const keyApi = chaveApi
+    const lat = Number(latitude)
+    const lon = Number(longitude)
 
-    const chaveApi = "6524a1ef013cd74821010118ec46574f";
-
-    const url =
-        `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
-
-        fetch(url)
-
-            .then(function(resposta) {
-
-                if (!resposta.ok) {
-                    throw new Error("Cidade não encontrada.");
-                }
-
-                return resposta.json();
-            })
-
-            .then (function(dados) {
-                function latitude(){
-                    return dados.coord.lat
-                }
-
-                function longitute(){
-                    return dados.coord.lon
-                }
-            })
-
-    const latitude = latitude()
-
-    const longitude = longitude()
+    const previsaoUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${keyApi}&units=metric`;
     
-    const previsaoUrl = `api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&cnt={7}&appid=${chaveApi}`
-    
-        fetch(previsaoUrl)  
+    fetch(previsaoUrl)  
 
-            .then(function(previsao) {
-                for(let i = 0; i<=7; i++){
-                    let lista = 
+        .then(res => {
+            if (!res.ok) {
+                throw new Error("Erro ao buscar a previsão de 5 dias.");
+            }
+            return res.json();
+        })
+
+        .then(function(previsao) {
+            lista = [];
+
+            if (previsao && previsao.list) {
+                
+                for (let i = 0; i < 7; i++) {
+                    
+                    if (previsao.list[i] && previsao.list[i].main) {
+                        lista.push(previsao.list[i].main.temp);
+                    }
                 }
-            })
+            }
+            console.log(lista)
+        })
 }
+
+// construção do gráfico 
+

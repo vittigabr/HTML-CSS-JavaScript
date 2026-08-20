@@ -1,4 +1,6 @@
-export const botaoBuscar = document.getElementById("buscar");
+import { previsaoDias } from "./grafico.js";
+
+const botaoBuscar = document.getElementById("buscar");
 
 botaoBuscar.addEventListener("click", buscarClima);
 
@@ -29,7 +31,12 @@ function buscarClima() {
 
         .then(function(dados) {
             
+            const lat = dados.coord.lat;
+            
+            const lon = dados.coord.lon;
+            
             console.log(dados);
+            console.log(lat, lon)
 
             document.getElementById("nomeCidade").textContent =
                 dados.name;
@@ -86,6 +93,8 @@ function buscarClima() {
             
             document.getElementById("rajada").textContent =
                 rajadaKmH.toFixed(1);
+
+            previsaoDias(lat, lon, chaveApi)
         })
 
         .catch(function(erro) {
