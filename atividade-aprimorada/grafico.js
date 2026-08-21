@@ -3,6 +3,7 @@ let grafico = null
 let dias = new Date
 let diaSemana = dias.getUTCDay()
 let semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+let cores = []
 
 export function previsaoDias(latitude, longitude, chaveApi) {
 
@@ -31,9 +32,32 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                     
                     if (previsao.list[i] && previsao.list[i].main) {
                         lista.push(previsao.list[i].main.temp);
+                        if(previsao.list[i].main.temp >= 25){
+                            cores.push('red')
+                        }
+                        else{
+                            cores.push('blue')
+                        }
                     }
                 }
                 
+                let semanas = []
+                if(diaSemana <= 2){
+                    semanas.push(semana[diaSemana], semana[diaSemana + 1], semana[diaSemana + 2], semana[diaSemana + 3], semana[diaSemana + 4])
+                }
+                else if(diaSemana == 3){
+                    semanas.push(semana[diaSemana], semana[diaSemana + 1], semana[diaSemana + 2], semana[diaSemana + 3], semana[diaSemana - 3])
+                }
+                else if(diaSemana == 4){
+                    semanas.push(semana[diaSemana], semana[diaSemana + 1], semana[diaSemana + 2], semana[diaSemana - 4], semana[diaSemana - 3])
+                }
+                else if(diaSemana == 5){
+                    semanas.push(semana[diaSemana], semana[diaSemana + 1], semana[diaSemana - 5], semana[diaSemana - 4], semana[diaSemana - 3])
+                }
+                else{
+                    semanas.push(semana[diaSemana], semana[diaSemana - 6], semana[diaSemana - 5], semana[diaSemana - 4], semana[diaSemana - 3])
+                }
+
                 const ctx = document.getElementById('chart');
 
                 if (grafico) {
@@ -43,13 +67,13 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                 grafico = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: [],
+                        labels: semanas,
                         datasets: [{
                             label: 'Temperatura',
                             data: lista,
                             borderWidth: 3,
                             pointBorderWidth: 9,
-                            pointBorderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange']
+                            pointBorderColor: cores
                         }]
                     },
                     options: {
