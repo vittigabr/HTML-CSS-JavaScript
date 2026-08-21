@@ -30,34 +30,59 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                         lista.push(previsao.list[i].main.temp);
                     }
                 }
+                const ctx = document.getElementById('chart');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [1, 2, 3, 4, 5, 6, 7],
+                        datasets: [{
+                            label: 'Temperatura',
+                            data: [lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6]],
+                            borderWidth: 3,
+                            pointBorderWidth: 9,
+                            pointBorderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange']
+                        }]
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                        },
+                        
+                    }
+                });
+                ctx.update()
             }
+            
             console.log(lista)
+
+            lista = []
         })
 }
 
 // construção do gráfico 
 
-const ctx = document.getElementById('chart');
+// const ctx = document.getElementById('chart');
 
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-        label: '# of Votes',
-        data: lista,
-        borderWidth: 3,
-        backgroundColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange'],
-        pointBorderWidth: 9,
-        pointBorderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange']
-        }]
-    },
-    options: {
-        scales: {
-        y: {
-            beginAtZero: false
-        }
-        },
+// new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//         labels: [lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6]],
+//         datasets: [{
+//             label: 'Temperatura',
+//             data: [lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6]],
+//             borderWidth: 3,
+//             pointBorderWidth: 9,
+//             pointBorderColor: ['red', 'blue', 'yellow', 'green', 'purple', 'orange']
+//         }]
+//     },
+//     options: {
+//         scales: {
+//         y: {
+//             beginAtZero: false
+//         }
+//         },
         
-    }
-});
+//     }
+// });
