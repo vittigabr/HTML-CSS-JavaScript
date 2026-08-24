@@ -119,20 +119,21 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                             borderColor: 'black',
                             borderWidth: 3,
                             pointBorderWidth: 9,
-                            pointBorderColor: cores,
-                            backgroundColor: 'blue'
+                            pointBorderColor: 'grey',
+                            backgroundColor: 'grey'
                         }]
                     },
                     options: {
                         scales: {
                         y: {
-                            beginAtZero: false
+                            beginAtZero: true
                         }
                         },
                         plugins: {
                             legend: {
                                 labels: {
-                                    color: 'blue'
+                                    color: 'grey'
+                                    
                                 }
                             }
                         },
