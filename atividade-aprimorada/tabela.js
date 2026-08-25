@@ -105,15 +105,24 @@ function buscarClima() {
             
             if(descricao === 'céu limpo' || descricao === 'nuvens dispersas'){
                 body.backgroundImage = 'url(assets/sunny-bg.jpg)'
-                display.style.backgroundColor = 'rgba(255, 228, 181, 0.3)'
+                display.style.backgroundColor = 'rgba(255, 228, 181, 0.3)'   
+                tabela.forEach((bloco, index) => {
+                    bloco.style.backgroundColor = 'rgba(255, 228, 181, 0.7)'
+                })
             }
             else if(descricao === 'nublado' || descricao === 'algumas nuvens'){
                 body.backgroundImage = 'url(assets/cloudy-bg.jpg)'
                 display.style.backgroundColor = 'rgba(176, 196, 222, 0.3)'
+                tabela.forEach((bloco, index) => {
+                    bloco.style.backgroundColor = 'rgba(176, 196, 222, 0.7)'
+                })
             }
             else if(descricao === 'chuva' || descricao === 'chuva leve' || descricao === 'chuva forte'){
                 body.backgroundImage = 'url(assets/rain-bg.jpg)'
                 display.style.backgroundColor = 'rgba(25, 77, 112, 0.3)'
+                tabela.forEach((bloco, index) => {
+                    bloco.style.backgroundColor = 'rgba(25, 77, 112, 0.7)'
+                })
             }
 
             previsaoDias(lat, lon, chaveApi)
