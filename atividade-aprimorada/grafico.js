@@ -89,9 +89,17 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                     },
                     options: {
                         scales: {
-                        y: {
-                            beginAtZero: false
-                        }
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    color: 'black', // Muda a cor dos números ao lado do gráfico
+                                  }
+                            },
+                            x: {
+                                ticks: {
+                                    color: 'black', // Muda a cor dos números ao lado do gráfico
+                                  }
+                            },
                         },
                         plugins: {
                             legend: {
@@ -119,23 +127,30 @@ export function previsaoDias(latitude, longitude, chaveApi) {
                             borderColor: 'black',
                             borderWidth: 3,
                             pointBorderWidth: 9,
-                            pointBorderColor: 'grey',
-                            backgroundColor: 'grey'
+                            pointBorderColor: 'lightblue',
+                            backgroundColor: 'lightblue'
                         }]
                     },
                     options: {
                         scales: {
                         y: {
-                            beginAtZero: true
-                        }
+                            beginAtZero: true,
+                            ticks: {
+                                color: 'black', // Muda a cor dos números ao lado do gráfico
+                              }
+                        },
+                        x: {
+                            ticks: {
+                                color: 'black', // Muda a cor dos números ao lado do gráfico
+                              }
+                        },
                         },
                         plugins: {
                             legend: {
                                 labels: {
-                                    color: 'grey'
-                                    
+                                    color: 'darkblue'      
                                 }
-                            }
+                            },
                         },
                     },
                 });

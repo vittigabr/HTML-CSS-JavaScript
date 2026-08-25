@@ -9,6 +9,8 @@ body{
     align-items: center;
     height: 150vh;
     font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .display{
@@ -19,14 +21,14 @@ body{
     align-items: center;
     width: 1150px;
     height: 1000px;
-    background-color: #fff;
-    box-shadow: 5px 5px 30px #000;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); 
     gap: 30px;
     border-radius: 20px;
 }
 
 .display p{
-    color: #757575;
+    color: #3e3e3e;
 }
 
 .inserirDados{
