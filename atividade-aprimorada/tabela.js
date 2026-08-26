@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 import { previsaoDias } from "./grafico.js";
 
 const botaoBuscar = document.getElementById("buscar");
@@ -19,7 +21,7 @@ function buscarClima() {
         return;
     }
 
-    const chaveApi = process.env.chaveApi;
+    const chaveApi = process.env.chaveApi
     // 6524a1ef013cd74821010118ec46574f
 
     const url =
