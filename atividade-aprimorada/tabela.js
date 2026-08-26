@@ -19,7 +19,8 @@ function buscarClima() {
         return;
     }
 
-    const chaveApi = "6524a1ef013cd74821010118ec46574f";
+    const chaveApi = process.env.chaveApi;
+    // 6524a1ef013cd74821010118ec46574f
 
     const url =
         `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
