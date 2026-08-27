@@ -43,3 +43,33 @@
     flex-direction: column;
     align-items: center;
 }
+
+.loginDisplay{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--verde-escuro);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: var(--font-titulo);
+}
+
+.loginDisplay form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    font-family: var(--font-corpo);
+
+}
+
+.loginDisplay form input{
+    width: 290px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
