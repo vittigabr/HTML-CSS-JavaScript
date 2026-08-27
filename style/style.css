@@ -1,0 +1,150 @@
+@import url('./variables.css'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 1000;
+    width: 500px;
+    height: 100vh;
+    background-color: var(--verde-escuro);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.sidebar div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: var(--creme);
+    font-family: var(--font-corpo);
+}
+
+.sidebar a{
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sidebar a:hover{
+    background-color: var(--hover);
+}
+
+.sidebar div h2{
+    margin: auto;
+    font-size: 32px;
+}
+
+.loginSide{
+    position: fixed;
+    bottom: 5%;
+}
+
+.loginSide img{
+    margin-right: 30px;
+}
+
+main{
+    margin-left: 600px;
+}
+
+.hero{
+    background-image: url(../assets/cachorro-gato.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.balaoPrincipal{
+    border: 2px solid var(--verde-escuro);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px var(--verde-escuro);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    padding: 30px;
+}
+
+.balaoPrincipal h1{
+    color: var(--verde-escuro);
+    font-family: var(--font-titulo);
+}
+
+.balaoPrincipal p{
+    color: var(--verde-escuro);
+    font-family: var(--font-corpo);
+}
+
+.conteudoPrincipal{
+    margin-top: 20px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.cards{
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 50px;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.card{
+    background-color: var(--verde-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
+    padding: 30px;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.22)
+}
+
+.card h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--verde-escuro);
+    font-family: var(--font-corpo);
+}
+
+.card .imgCard{
+    padding: 10px;
+    background-color: var(--verde-escuro);
+    border-radius: 50%;
+}
+
+.card p{
+    color: #fff;
+}
+
+.arrowCard{
+    background-color: var(--verde-escuro);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+}
