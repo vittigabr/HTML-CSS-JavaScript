@@ -1,0 +1,108 @@
+:root{
+    --azul-escuro: #5273D7;
+    --azul-claro: #8CA7F7;
+    --verde-escuro: #3ed85b;
+    --verde-claro: #80ff97;
+    --vermelho: #FF7979;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: var(--azul-escuro);
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    top: 0%;
+    width: 100%;
+}
+
+.navCabecalho{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    padding: 80px;
+}
+
+.navCabecalho a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.navCabecalho a:hover{
+    color: #323232;
+}
+
+section{
+    justify-self: center;
+    width: 50%;
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--azul-claro);
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+}
+
+.escolhaReserva{
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.carrinho{
+    width: 100%;
+    background-color: #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.carrinho button{
+    padding: 20px;
+    border: 1px solid var(--verde-claro);
+    border-radius: 20px;
+    background-color: rgba(128, 255, 151, 0.6);
+    transition: 0.3s;
+}
+
+.carrinho button:hover{
+    background-color: rgba(128, 255, 151, 1);
+}
+
+.escolhaReserva select{
+    width: 60%;
+    padding: 10px;
+}
+
+.cardConfirmar{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#enviarBotao{
+    padding: 20px;
+    border: 1px solid var(--verde-claro);
+    border-radius: 20px;
+    background-color: rgba(128, 255, 151, 0.8);
+    transition: 0.3s;
+}
+
+#enviarBotao:hover{
+    background-color: rgba(128, 255, 151, 1);
+}

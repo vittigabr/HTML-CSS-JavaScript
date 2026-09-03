@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>SysAgendamento</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="tituloCabecalho">Sistema de Agendamento</h1>
+    </header>
+
+    <section class="escolhaReserva">
+        <h2>Nome do professor:</h2>
+        <input type="text" name="" id="nome">
+        
+        <h2>Escolha a data que deseja reservar:</h2>
+        <input type="date" name="" id="data">
+
+        <h2>Escolha o Carrinho:</h2>
+        <div class="carrinho">
+            <h3 class="textCarrinho">carrinho 1</h3>
+            <button class="botao">Reservar</button>
+        </div>
+        <div class="carrinho">
+            <h3 class="textCarrinho">carrinho 2</h3>
+            <button class="botao">Reservar</button>
+        </div>
+        <div class="carrinho">
+            <h3 class="textCarrinho">carrinho 3</h3>
+            <button class="botao">Reservar</button>
+        </div>
+
+        <h2>Escolha a turma:</h2>
+        <select name="" id="turma">
+            <option>Escolha a turma</option>
+            <option>6ºA</option>
+            <option>6ºB</option>
+            <option>8ºA</option>
+            <option>9ºA</option>
+            <option>9ºB</option>
+            <option>1ºEM.A</option>
+            <option>1ºEM.B</option>
+            <option>1ºEM.C</option>
+            <option>2ºEMT.A</option>
+            <option>2ºEMT.B</option>
+            <option>2ºEM.C</option>
+            <option>3ºEMT.A</option>
+            <option>3ºEMT.B</option>
+            <option>3ºEM.C</option>
+        </select>
+
+        <h2>Escolha o horário:</h2>
+        <select name="" id="horario">
+            <option>Escolha o horário</option>
+            <option>07:30-08:20</option>
+            <option>08:20-09:25</option>
+            <option>09:25-10:15</option>
+            <option>10:15-11:05</option>
+            <option>11:05-11:55</option>
+            <option>12:55-13:45</option>
+            <option>13:45-14:50</option>
+            <option>14:50-15:40</option>
+            <option>15:40-16:30</option>
+        </select>
+
+        <button id="enviarBotao">Enviar</button>
+    </section>
+
+    <section class="cardConfirmar">
+        <h2>Confirme as informações:</h2>
+        <div class="informacoesReserva">
+            <p>Data: <span id="resp-data">--</span></p>
+            <p>Carrinho: <span id="resp-carrinho">--</span></p>
+            <p>Professor: <span id="resp-nome">--</span></p>
+            <p>Turma: <span id="resp-turma">--</span></p>
+            <p>Horário início: <span id="horario-inicio">--</span></p>
+            <p>Horário término: <span id="horario-termino">--</span></p>
+        </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
+<!-- https://www.figma.com/design/v6kGMRcvGBHFfprFCQNtpu/Atividade---carrinho?node-id=0-1&t=q1Ys9Ntr3Z4L1FgD-1 -->
