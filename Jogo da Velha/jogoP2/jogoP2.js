@@ -54,6 +54,7 @@ casas.forEach((casa, index) => {
             placarX.innerText = px++
             resultado.innerText += ' Ganhador X'
             zerarCasas()
+            contador = 0
         }
         else if((casas[0].innerText=='O' && casas[1].innerText=='O' && casas[2].innerText=='O') || 
         
@@ -73,6 +74,7 @@ casas.forEach((casa, index) => {
             placarO.innerText = po++
             resultado.innerText += ' Ganhador O'
             zerarCasas()
+            contador = 0
         }
         
         if(contador==9){
