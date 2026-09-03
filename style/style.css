@@ -151,3 +151,124 @@ main{
     padding: 10px;
     margin-left: auto;
 }
+
+@media (max-width: 1024px) {
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 90px;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    /* Esconde os textos da sidebar */
+    .sidebar h2 {
+        display: none;
+    }
+
+    /* Itens da sidebar */
+    .sidebar > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ícones */
+    .sidebar > div img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    /* Login continua no final */
+    .loginSide {
+        margin-top: auto;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+        margin-left: 90px;
+        width: calc(100% - 90px);
+        padding: 20px;
+    }
+
+    /* FORMULÁRIOS */
+    form {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    /* Evita imagens estourando a tela */
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 200px;
+        padding: 20px 10px;
+    }
+
+    .sidebar > img {
+        max-width: 150px;
+    }
+
+    .sidebar div {
+        gap: 10px;
+    }
+
+    .sidebar div img {
+        width: 25px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+    }
+
+
+    /* CONTEÚDO PRINCIPAL */
+    main {
+        margin-left: 200px;
+        padding: 25px;
+    }
+
+
+    /* FORMULÁRIOS */
+    form {
+        width: 90%;
+        max-width: 700px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+
+    /* TÍTULOS */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+    /* IMAGENS */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
