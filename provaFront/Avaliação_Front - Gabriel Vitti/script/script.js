@@ -18,7 +18,15 @@ const enviarBotao = document.getElementById('enviarBotao')
 
 botoes.forEach((botao, index) => {
     botao.addEventListener('click', () => {
-        carrinho = `carrinho ${index + 1}`
+        botoes.forEach((b) => {
+            b.textContent = 'Reservar'
+            b.classList.remove('selecionado')
+        })
+
+        botao.textContent = 'Selecionado'
+        botoes[index].classList.add('selecionado')
+
+        carrinho = `${index + 1}`
     })
 })
 

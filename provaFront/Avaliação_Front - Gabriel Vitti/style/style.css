@@ -84,6 +84,15 @@ input{
     background-color: rgba(128, 255, 151, 1);
 }
 
+.carrinho button.selecionado{
+    border-color: rgb(82, 115, 215);
+    background-color: rgba(82, 115, 215, 0.6);
+}
+
+.carrinho button.selecionado:hover{
+    background-color: rgb(82, 115, 215);
+}
+
 .escolhaReserva select{
     width: 60%;
     padding: 10px;
