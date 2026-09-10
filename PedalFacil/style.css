@@ -69,30 +69,103 @@ li a{
     color: var(--slate-500);
 }
 
-.botaoAlugar{
+.botaoAlugar, .botaoVerde{
     color: var(--green-pale);
     background-color: var(--green);
     padding: 20px;
     padding-inline: 50px;
     border-radius: 50px;
     transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--font-display);
 }
 
-.botaoAlugar:hover{
+.botaoAlugar:hover, .botaoVerde:hover{
     background-color: var(--green-dark);
 }
 
 .home{
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 200px;
     width: 90%;
-    margin-left: 1%;
+    margin-left: 5%;
 }
 
 .home small{
     text-transform: uppercase;
     color: var(--green-dark);
+    font-size: 20px;
+    background-color: var(--green-light);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-weight: 800;
 }
 
-.home h1{
+.conteudoHome h1{
     font-family: var(--font-display);
+    font-size: 70px;
+}
+
+.conteudoHome h1 span{
+    color: var(--green);
+}
+
+.conteudoHome p{
+    font-size: 25px;
+    color: var(--slate-500);
+    margin-bottom: 50px;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.botoes .infoHome{
+    color: var(--slate-400);
+    font-size: 22px;
+}
+
+.tabela{
+    display: flex;
+    gap: 50px;
+}
+
+.tabela p{
+    font-weight: 500;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+}
+
+.imagemHome{
+    background-image: url(https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.imagemHome div{
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    align-items: center;
+}
+
+.imagemHome p{
+    font-family: var(--font-body);
+}
+
+.imagemHome span{
+    background-color: var(--green-light);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
 }
