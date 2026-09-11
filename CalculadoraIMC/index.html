@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Calculadora de IMC</h1>
+        <p>Descubra seu índice de massa corporal de forma rápida e simples</p>
+    </header>
+
+    <section class="calculadora">
+        <div class="entradaDados">
+            <div class="peso">
+                <div class="containerTitulo">
+                    <img src="assets/user-round.png" alt="">
+                    <h3>Peso:</h3>
+                </div>
+                <div class="containerEntrada">
+                    <input type="number" name="" id="pesoInput" placeholder="70">
+                    <h3>kg</h3>
+                </div>
+            </div>
+            <div class="altura">
+                <div class="containerTitulo">
+                    <img src="assets/ruler.png" alt="">
+                    <h3>Altura:</h3>
+                </div>
+                <div class="containerEntrada">
+                    <input type="text" name="" id="alturaInput" placeholder="1,75">
+                    <h3>m</h3>
+                </div>
+            </div>
+        </div>
+        
+        <button id="botaoCalcular"><img src="assets/calculator.png" alt="">Calcular IMG</button>
+
+        <h2>Classificação IMC:</h2>
+        <div class="tabelaInfo">
+            <div class="abaixoPeso">
+                <h2>&lt; 18,5</h2>
+                <p>Abaixo do Peso</p>
+            </div>
+            <div class="pesoNormal">
+                <h2>18,5 - 24,9</h2>
+                <p>Peso normal</p>
+            </div>
+            <div class="sobrepeso">
+                <h2>25 - 29,9</h2>
+                <p>Sobrepeso</p>
+            </div>
+            <div class="grauI">
+                <h2>30 - 34,9</h2>
+                <p>Obesidade grau I</p>
+            </div>
+            <div class="grauII">
+                <h2>35 - 39,9</h2>
+                <p>Obesidade grau II</p>
+            </div>
+            <div class="grauIII">
+                <h2>&gt;=40</h2>
+                <p>Obesidade grau III</p>
+            </div>
+        </div>
+
+        <div class="quadroResultado">
+            <h2>Seu IMC é</h2>
+            <h1 id="respostaIMC">--</h1>
+            <div class="verificacao">
+                <p id="nivelIMC">--</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
