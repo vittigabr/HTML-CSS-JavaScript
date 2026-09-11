@@ -1,4 +1,5 @@
 const botao = document.getElementById('botao')
+const input = document.getElementById('txt1')
 
 botao.addEventListener('click', tabuada)
 function tabuada(){
@@ -20,3 +21,9 @@ function tabuada(){
         }
     }
 }
+
+input.addEventListener('keydown', (event) => {
+    if(event.key === 'Enter'){
+        tabuada()
+    }
+})
