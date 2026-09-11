@@ -5,6 +5,7 @@ const botao = document.getElementById('botaoCalcular')
 
 const resposta = document.getElementById('respostaIMC')
 const nivel = document.getElementById('nivelIMC')
+const titulo = document.getElementById('tituloIMC')
 
 const quadro = document.querySelector('.quadroResultado')
 
@@ -18,7 +19,7 @@ function verificar(){
     
     resposta.textContent = resultIMC
 
-    if(resultIMC < 18.5){
+    if(resultIMC <= 18.5 && resultIMC > 0.0){
         nivel.textContent = 'Abaixo do Peso'
         quadro.style.backgroundColor = 'var(--azul-imc)'
         nivel.style.color = '#348cff'
@@ -47,6 +48,14 @@ function verificar(){
         quadro.style.backgroundColor = 'var(--rosa-imc)'
         nivel.style.color = '#ff4d6b'
         resposta.style.color = '#ff4d6b'
+    }
+    else if(resposta.textContent == 'NaN' || resposta.textContent == 'Infinity' || resposta.textContent == '0.0'){
+        resposta.textContent = 'Insira os dados'
+        nivel.textContent = 'Dados incorretos'
+        quadro.style.backgroundColor = '#5C1204'
+        nivel.style.color = '#ffff'
+        resposta.style.color = '#fff'
+        titulo.textContent = ''
     }
     else{
         nivel.textContent = 'Obesidade Grau III'
