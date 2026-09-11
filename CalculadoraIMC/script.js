@@ -10,7 +10,7 @@ const titulo = document.getElementById('tituloIMC')
 const quadro = document.querySelector('.quadroResultado')
 
 function imc(peso, altura){
-    let resultado = peso/(Math.pow(altura.replace(',', '.'), 2))
+    let resultado = peso.replace(',', '.')/(Math.pow(altura.replace(',', '.'), 2))
     return resultado.toFixed(1) 
 }
 
