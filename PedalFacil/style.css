@@ -15,6 +15,10 @@
     --font-body: 'Inter', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--bg);
 }
@@ -189,6 +193,8 @@ li a{
     flex-direction: column;
     align-items: center;
     margin-bottom: 150px;
+    margin-top: 100px;
+    justify-content: center;
 }
 
 .tabelaPasso{
@@ -221,8 +227,9 @@ li a{
 
 .tabelaPasso div{
     background-color: var(--white);
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
+    width: 600px;
 }
 
 .disponibilidade{
@@ -372,7 +379,6 @@ li a{
     flex-direction: column;
     font-family: var(--font-display);
     background-color: var(--white);
-    background: linear-gradient(rgba(226, 226, 226, 0.2), rgba(226, 226, 226, 0.2));
 }
 
 .cardBike.indisponivel button{
@@ -398,4 +404,51 @@ li a{
 .cardBike.indisponivel .imgBike p{
     background-color: var(--slate-700);
     color: var(--white);
+}
+
+.banner{
+    background-color: var(--green);
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.banner div{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.banner h1{
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.banner p{
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 20px;
+}
+
+.banner a{
+    color: var(--green-dark);
+    background-color: var(--white);
+    padding: 20px;
+    padding-inline: 50px;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+.banner a:hover{
+    background-color: var(--slate-200);
 }
