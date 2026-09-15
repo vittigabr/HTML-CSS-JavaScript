@@ -90,8 +90,11 @@ li a{
 }
 
 .home{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: var(--white);
 }
 
 .conteudoHome{
@@ -152,8 +155,12 @@ li a{
     background-image: url(https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     align-items: end;
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
 }
 
 .imagemHome div{
@@ -181,6 +188,7 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .tabelaPasso{
@@ -195,22 +203,148 @@ li a{
 
 .tabelaPasso small{
     color: var(--green-dark);
-    font-size: 20px;
+    font-size: 50px;
     font-family: var(--font-body);
 }
 
 .tabelaPasso h3{
     font-family: var(--font-display);
     font-weight: 800;
+    font-size: 30px;
 }
 
 .tabelaPasso p{
     font-family: var(--font-display);
     color: var(--slate-500);
+    font-size: 30px;
 }
 
 .tabelaPasso div{
     background-color: var(--white);
     padding: 20px;
     border-radius: 20px;
+}
+
+.disponibilidade{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.corpoTitulo{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 250px;
+}
+
+.corpoTitulo small{
+    font-family: var(--font-body);
+    color: var(--green-dark);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.tituloDisponivel{
+    font-family: var(--font-display);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.tituloDisponivel small{
+    font-family: var(--font-display);
+    text-transform: lowercase;
+    color: var(--slate-500);
+}
+
+.cardsBikes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cardBike{
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    background-color: var(--white);
+}
+
+.cardBike img{
+    height: 400px;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardBike small, h2, p, i, div{
+    margin-left: 2%;
+}
+
+.cardBike small{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.cardBike h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.cardBike p{
+    font-size: 30px;
+    color: var(--slate-500);
+}
+
+.cardBike i{
+    width: 95%;
+    border: 1px solid var(--slate-200);
+}
+
+.cardBike .precoCima{
+    color: var(--slate-400);
+    text-transform: none;   
+}
+
+.preco{
+    display: flex;
+    width: 100%;
+    gap: 200px;
+}
+
+.preco small{
+    color: var(--slate-400);
+    text-transform: none;
+}
+
+.preco p{
+    font-size: 25px;
+    color: var(--green);
+}
+
+.cardBike button{
+    padding: 10px;
+    width: 95%;
+    align-self: center;
+    font-size: 30px;
+    font-family: var(--font-display);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--green);
+    transition: 0.3s ease;
+}
+
+.cardBike button:hover{
+    background-color: var(--green-dark);
 }
