@@ -379,6 +379,8 @@ li a{
     flex-direction: column;
     font-family: var(--font-display);
     background-color: var(--white);
+    opacity: 0.5;
+    cursor: no-drop;
 }
 
 .cardBike.indisponivel button{
