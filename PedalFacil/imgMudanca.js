@@ -6,6 +6,30 @@ const listaImg = [
 
 const cardImg = document.querySelectorAll('.imgBike')
 
+const botaoBike = document.querySelectorAll('.botaoBike')
+const bikeSelecionada = document.getElementById('bikeSelecionada')
+
+const listTipo = document.querySelectorAll('.smallCard')
+const listNome = document.querySelectorAll('.h2Card')
+const listPreco = document.querySelectorAll('.precoCard')
+
 cardImg.forEach((card, index) => {
     card.style.backgroundImage = `url(${listaImg[index]})`
+})
+
+botaoBike.forEach((botao, index) => {
+    botao.addEventListener('click', () => {
+        if(botao.textContent == 'Indisponível'){
+            alert('Este item está indisponível')
+        }
+        else{
+            bikeSelecionada.setAttribute('src', `${listaImg[index]}`)
+
+            document.getElementById('tipoInfo').textContent = listTipo[index].textContent
+            
+            document.getElementById('nomeInfo').textContent = listNome[index].textContent
+
+            document.getElementById('precoInfo').textContent = listPreco[index].textContent
+        }
+    })
 })

@@ -19,7 +19,7 @@
             <h1>Pedal <span class="destaqueLogo">Fácil</span></h1>
         </div>
         <ul>
-            <li><a href="#">Bikes</a></li>
+            <li><a href="#modelos">Bikes</a></li>
             <li><a href="#comoFunciona">Como funciona</a></li>
             <li><a href="#" class="botaoAlugar">Alugar</a></li>
         </ul>
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <section class="disponibilidade">
+    <section class="modelos" id="modelos">
         <div class="corpoTitulo">
             <small>catálogo</small>
             <div class="tituloDisponivel">
@@ -94,64 +94,64 @@
                     <div class="imgBike">
                         <p>Popular</p>
                     </div>
-                    <small>mountain bike</small>
-                    <h2>Trek X-Col 29</h2>
+                    <small class="smallCard">mountain bike</small>
+                    <h2 class="h2Card">Trek X-Col 29</h2>
                     <p>Suspensão dianteira de 100mm, <br> freios hidraúlicos e câmbio<br> Shimano Deore. Ideal para trilhas<br> e terrenos irregulares.</p>
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1>R$45<small>/dia</small></h1>
+                        <h1 class="precoCard">R$45<small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
-                    <button>Alugue sua bike</button>
+                    <a href="#formularioAluguel"><button class="botaoBike">Alugue sua bike</button></a>
                 </div>
 
                 <div class="cardBike">
                     <div class="imgBike">
                         <i></i>
                     </div>
-                    <small>bicicleta urbana</small>
-                    <h2>City Classic Urban</h2>
+                    <small class="smallCard">bicicleta urbana</small>
+                    <h2 class="h2Card">City Classic Urban</h2>
                     <p>Quadro novo de alumínio, guidão<br> ergonômico e bagageiro traseiro<br> integrado. Perfeita para o dia a<br> dia na cidade.</p>
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1>R$28<small>/dia</small></h1>
+                        <h1 class="precoCard">R$28<small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
-                    <button>Alugue sua bike</button>
+                    <a href="#formularioAluguel"><button class="botaoBike">Alugue sua bike</button></a>
                 </div>
 
                 <div class="cardBike">
                     <div class="imgBike">
                         <p>Novo</p>
                     </div>
-                    <small>elétrica</small>
-                    <h2>KBO E-Bike Breeze</h2>
+                    <small class="smallCard">elétrica</small>
+                    <h2 class="h2Card">KBO E-Bike Breeze</h2>
                     <p>Motor 500W com autonomia de<br> até 80km por carga. Pedal<br> assistido em níveis, ideal para<br> longas distâncias sem esforço.</p>
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1>R$75<small>/dia</small></h1>
+                        <h1 class="precoCard">R$75<small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
-                    <button>Alugue sua bike</button>
+                    <a href="#formularioAluguel"><button class="botaoBike">Alugue sua bike</button></a>
                 </div>
 
                 <div class="cardBike indisponivel">
                     <div class="imgBike">
                         <p>Indisponível</p>
                     </div>
-                    <small>speed / estrada</small>
-                    <h2>Veloz Road 700c</h2>
+                    <small class="smallCard">speed / estrada</small>
+                    <h2 class="h2Card">Veloz Road 700c</h2>
                     <p>Quadro de carbono leve, pneus<br> 700x23c e câmbio Shimano<br> Tiagra 20v. Para quem busca<br> velocidade e performance.</p>
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1>R$60<small>/dia</small></h1>
+                        <h1 class="precoCard">R$60<small>/dia</small></h1>
                         <p>Indisponível</p>
                     </div>
-                    <button disabled>Indisponível</button>
+                    <a href="#formularioAluguel"><button class="botaoBike">Indisponível</button></a>
                 </div>
         </div>
         <div class="banner">
@@ -160,6 +160,30 @@
                 <p>Faça sua reserva agora e aproveite a liberdade sobre duas rodas.</p>
             </div>
             <a href="">Alugue sua bike &RightArrow;</a>
+        </div>
+    </section>
+
+    <section class="formularioAluguel" id="formularioAluguel">
+        <div class="corpoTitulo">
+            <small>formulário de reserva</small>
+            <div class="tituloDisponivel">
+                <h1>Finalize seu aluguel</h1>
+            </div>
+
+        </div>
+        <div class="cardPreco">
+            <div class="infoCard">
+                <img id="bikeSelecionada" src="" alt="">
+                <div class="textoInfo">
+                    <small id="tipoInfo"></small>
+                    <h1 id="nomeInfo"></h1>
+                    <p id="precoInfo"></p>
+                </div>
+            </div>
+            <div class="infoPreco">
+                <small>2 dias</small>
+                <h1>R$90</h1>
+            </div>
         </div>
     </section>
     <script src="imgMudanca.js"></script>

@@ -232,7 +232,7 @@ li a{
     width: 600px;
 }
 
-.disponibilidade{
+.modelos{
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -415,6 +415,7 @@ li a{
     align-items: center;
     justify-content: space-around;
     border-radius: 20px;
+    margin-bottom: 150px;
 }
 
 .banner div{
@@ -453,4 +454,67 @@ li a{
 
 .banner a:hover{
     background-color: var(--slate-200);
+}
+
+.formularioAluguel{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cardPreco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.infoCard{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.infoCard img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.textoInfo small{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.textoInfo h1{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: var(--font-display);
+}
+
+.textoInfo p{
+    font-size: 30px;
+    color: var(--green);
+    font-family: var(--font-display);
+    padding: 0;
+    margin: 0;
+}
+
+.infoPreco small{
+    text-transform: none;
+    color: var(--slate-500);
+    font-family: var(--font-display);
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.infoPreco h1{
+    font-family: var(--font-display);
+    font-size: 90px;
 }
