@@ -261,6 +261,7 @@ li a{
 }
 
 .cardsBikes{
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -274,14 +275,29 @@ li a{
     background-color: var(--white);
 }
 
-.cardBike img{
+.imgBike{
+    display: flex;
+    background-position: center;
+    background-size: cover;
     height: 400px;
     width: 500px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.cardBike small, h2, p, i, div{
+.cardBike .imgBike p{
+    color: var(--green-pale);
+    background-color: var(--green);
+    border-radius: 35px;
+    padding: 15px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: var(--font-display);
+}
+
+.cardBike small, h2, p, i, .preco{
     margin-left: 2%;
 }
 
@@ -347,4 +363,39 @@ li a{
 
 .cardBike button:hover{
     background-color: var(--green-dark);
+}
+
+.cardBike.indisponivel{
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    background-color: var(--white);
+    background: linear-gradient(rgba(226, 226, 226, 0.2), rgba(226, 226, 226, 0.2));
+}
+
+.cardBike.indisponivel button{
+    padding: 10px;
+    width: 95%;
+    align-self: center;
+    font-size: 30px;
+    font-family: var(--font-display);
+    color: var(--slate-700);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--slate-200);
+    transition: 0.3s ease;
+}
+
+.cardBike.indisponivel small, .cardBike.indisponivel .preco p{
+    font-size: 25px;
+    color: var(--slate-500);
+}
+
+.cardBike.indisponivel .imgBike p{
+    background-color: var(--slate-700);
+    color: var(--white);
 }
