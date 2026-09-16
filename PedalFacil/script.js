@@ -21,6 +21,7 @@ botaoBike.forEach((botao, index) => {
     botao.addEventListener('click', () => {
         if(botao.textContent == 'Indisponível'){
             alert('Este item está indisponível')
+            document.querySelector('.cardPreco').style.display = 'none'
         }
         else{
             bikeSelecionada.setAttribute('src', `${listaImg[index]}`)
@@ -30,6 +31,8 @@ botaoBike.forEach((botao, index) => {
             document.getElementById('nomeInfo').textContent = listNome[index].textContent
 
             document.getElementById('precoInfo').textContent = listPreco[index].textContent
+
+            document.querySelector('.cardPreco').style.display = 'flex'
         }
     })
 })
