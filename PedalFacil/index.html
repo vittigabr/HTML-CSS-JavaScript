@@ -100,7 +100,7 @@
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1 class="precoCard">R$45<small>/dia</small></h1>
+                        <h1>R$<span class="precoCard">45</span><small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
                     <a class="botaoBike" href="#formularioAluguel"><button>Alugue sua bike</button></a>
@@ -116,7 +116,7 @@
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1 class="precoCard">R$28<small>/dia</small></h1>
+                        <h1>R$<span class="precoCard">28</span><small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
                     <a class="botaoBike" href="#formularioAluguel"><button>Alugue sua bike</button></a>
@@ -132,7 +132,7 @@
                     <i></i>
                     <small class="precoCima">A partir de</small>
                     <div class="preco">
-                        <h1 class="precoCard">R$75<small>/dia</small></h1>
+                        <h1>R$<span class="precoCard">75</span><small>/dia</small></h1>
                         <p>&FilledSmallSquare; Disponível</p>
                     </div>
                     <a class="botaoBike" href="#formularioAluguel"><button>Alugue sua bike</button></a>
@@ -177,12 +177,12 @@
                 <div class="textoInfo">
                     <small id="tipoInfo"></small>
                     <h1 id="nomeInfo"></h1>
-                    <p id="precoInfo"></p>
+                    <p>R$<span id="precoInfo"></span>/dia</p>
                 </div>
             </div>
             <div class="infoPreco">
-                <small></small>
-                <h1></h1> <!-- tem que fazer a parte de devolução e retirada para fazer a conta exata do valor-->
+                <small><span class="diasAluguel"></span></small>
+                <h1><span class="precoAluguel"></span></h1> <!-- tem que fazer a parte de devolução e retirada para fazer a conta exata do valor-->
             </div>
         </div>
         <form action="">
@@ -243,10 +243,10 @@
         </form>
         <div class="consultaPreco">
             <div>
-                <p>2 dias x R$ 45,00</p>
+                <p><span class="diasAluguel"></span> dias x R$<span id="precoAluguel"></span></p>
                 <small>Pagamento na retirada</small>
             </div>
-            <h1>R$ 90,00</h1>
+            <h1>R$ <span class="precoAluguel"></span></h1>
         </div>
 
         <button id="botaoConfirmar" class="botaoConfirmar" type="submit">Confirmar Reserva</button>
