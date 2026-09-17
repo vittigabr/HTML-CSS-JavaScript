@@ -13,6 +13,8 @@ const listTipo = document.querySelectorAll('.smallCard')
 const listNome = document.querySelectorAll('.h2Card')
 const listPreco = document.querySelectorAll('.precoCard')
 
+let indexacao 
+
 cardImg.forEach((card, index) => {
     card.style.backgroundImage = `url(${listaImg[index]})`
 })
@@ -36,6 +38,7 @@ botaoBike.forEach((botao, index) => {
 
             document.querySelector('.cardPreco').style.display = 'flex'
         }
+        indexacao = index
     })
 })
 
@@ -86,15 +89,9 @@ botaoConfirmar.addEventListener('click', () => {
 
     let contadorPreco
 
-    // botaoBike.forEach((botao, index) => {
-    //     botao.addEventListener('click', () => {
-            
-    //     })
+    contadorPreco = contadorDias * Number(listPreco[indexacao].textContent)
 
-    //     contadorPreco = Number(listPreco[index].textContent) * Number(contadorDias)
-    // })
-
-    // precoAluguel.forEach((preco, index) => {
-    //     preco.textContent = contadorPreco
-    // })
+    precoAluguel.forEach((preco, index) => {
+        preco.textContent = contadorPreco.toFixed(2).replace('.', ',')
+    })
 })

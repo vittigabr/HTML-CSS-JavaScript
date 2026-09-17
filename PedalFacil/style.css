@@ -512,13 +512,15 @@ li a{
     margin: 0;
 }
 
+.infoPreco{
+    width: 20%;
+}
+
 .infoPreco small{
     text-transform: none;
     color: var(--slate-500);
     font-family: var(--font-display);
     font-size: 30px;
-    margin: 0;
-    padding: 0;
 }
 
 .infoPreco h1{
