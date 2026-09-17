@@ -13,6 +13,9 @@ const listTipo = document.querySelectorAll('.smallCard')
 const listNome = document.querySelectorAll('.h2Card')
 const listPreco = document.querySelectorAll('.precoCard')
 
+const preco = document.getElementById('precoAluguel')
+const precoAluguel = document.querySelectorAll('.precoAluguel')
+
 let indexacao 
 
 cardImg.forEach((card, index) => {
@@ -34,8 +37,12 @@ botaoBike.forEach((botao, index) => {
 
             const precoInfo = document.getElementById('precoInfo').textContent = listPreco[index].textContent
 
-            const precoAluguel = document.getElementById('precoAluguel').textContent = listPreco[index].textContent
+            preco.textContent = listPreco[index].textContent
 
+            precoAluguel.forEach((preco, index) => {
+                preco.textContent = ''
+            })
+            
             document.querySelector('.cardPreco').style.display = 'flex'
         }
         indexacao = index
@@ -84,8 +91,6 @@ botaoConfirmar.addEventListener('click', () => {
     diasAluguel.forEach((dia, index) => {
         dia.textContent = String(contadorDias)
     })
-
-    const precoAluguel = document.querySelectorAll('.precoAluguel')
 
     let contadorPreco
 
