@@ -7,7 +7,6 @@ const listaImg = [
 const cardImg = document.querySelectorAll('.imgBike')
 
 const botaoBike = document.querySelectorAll('.botaoBike')
-console.log(botaoBike)
 const bikeSelecionada = document.getElementById('bikeSelecionada')
 
 const listTipo = document.querySelectorAll('.smallCard')
@@ -74,7 +73,7 @@ botaoConfirmar.addEventListener('click', () => {
 
     if(mesDevolucao != mesRetirada){
         if(mes31.includes(mesRetirada)){
-        contadorDias = (31 + Number(diaDevolucao)) - Number(diaRetirada)
+            contadorDias = (31 + Number(diaDevolucao)) - Number(diaRetirada)
         }
         else if(mes30.includes(mesRetirada)){
             contadorDias = (30 + Number(diaDevolucao)) - Number(diaRetirada)  

@@ -1,0 +1,602 @@
+:root {
+    --green: #16a34a;
+    --green-dark: #15803d;
+    --green-light: #dcfce7;
+    --green-pale: #f0fdf4;
+    --slate-900: #0f172a;
+    --slate-700: #334155;
+    --slate-500: #64748b;
+    --slate-400: #94a3b8;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --white: #ffffff;
+    --bg: #f8fafc;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.cabecalho{
+    background-color: var(--white);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+    align-items: center;
+    border-bottom: 1px solid var(--slate-200);
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    padding: 30px;
+}
+
+.logo h1{
+    font-size: 30px;
+    font-family: var(--font-display);
+}
+
+.logo h1 span{
+    color: var(--green);
+}
+
+circle{
+    stroke: var(--green)
+}
+
+path{
+    fill: none;
+    stroke: var(--green);
+    stroke-width: 3;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 20px;
+    padding: 70px;
+    font-family: var(--font-display);
+}
+
+li a{
+    text-decoration: none;
+    color: var(--slate-500);
+}
+
+.botaoAlugar, .botaoVerde{
+    color: var(--green-pale);
+    background-color: var(--green);
+    padding: 20px;
+    padding-inline: 50px;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--font-display);
+}
+
+.botaoAlugar:hover, .botaoVerde:hover{
+    background-color: var(--green-dark);
+}
+
+.home{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: var(--white);
+}
+
+.conteudoHome{
+    margin-top: 200px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.conteudoHome small{
+    text-transform: uppercase;
+    color: var(--green-dark);
+    font-size: 20px;
+    background-color: var(--green-light);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-weight: 800;
+}
+
+.conteudoHome h1{
+    font-family: var(--font-display);
+    font-size: 70px;
+}
+
+.conteudoHome h1 span{
+    color: var(--green);
+}
+
+.conteudoHome p{
+    font-size: 25px;
+    color: var(--slate-500);
+    margin-bottom: 50px;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.botoes .infoHome{
+    color: var(--slate-400);
+    font-size: 22px;
+}
+
+.tabela{
+    display: flex;
+    gap: 50px;
+}
+
+.tabela p{
+    font-weight: 500;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+}
+
+.imagemHome{
+    background-image: url(https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+}
+
+.imagemHome div{
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    align-items: center;
+}
+
+.imagemHome p{
+    font-family: var(--font-body);
+}
+
+.imagemHome span{
+    background-color: var(--green-light);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comoFunciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.tabelaPasso{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.comoFunciona h1{
+    font-family: var(--font-display);
+}
+
+.tabelaPasso small{
+    color: var(--green-dark);
+    font-size: 50px;
+    font-family: var(--font-body);
+}
+
+.tabelaPasso h3{
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.tabelaPasso p{
+    font-family: var(--font-display);
+    color: var(--slate-500);
+    font-size: 30px;
+}
+
+.tabelaPasso div{
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.modelos{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.corpoTitulo{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 250px;
+}
+
+.corpoTitulo small{
+    font-family: var(--font-body);
+    color: var(--green-dark);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.tituloDisponivel{
+    font-family: var(--font-display);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.tituloDisponivel small{
+    font-family: var(--font-display);
+    text-transform: lowercase;
+    color: var(--slate-500);
+}
+
+.cardsBikes{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cardBike{
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    background-color: var(--white);
+}
+
+.imgBike{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cardBike .imgBike p{
+    color: var(--green-pale);
+    background-color: var(--green);
+    border-radius: 35px;
+    padding: 15px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: var(--font-display);
+}
+
+.cardBike small, h2, p, i, .preco{
+    margin-left: 2%;
+}
+
+.cardBike small{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.cardBike h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.cardBike p{
+    font-size: 30px;
+    color: var(--slate-500);
+}
+
+.cardBike i{
+    width: 95%;
+    border: 1px solid var(--slate-200);
+}
+
+.cardBike .precoCima{
+    color: var(--slate-400);
+    text-transform: none;   
+}
+
+.preco{
+    display: flex;
+    width: 100%;
+    gap: 200px;
+}
+
+.preco small{
+    color: var(--slate-400);
+    text-transform: none;
+}
+
+.preco p{
+    font-size: 25px;
+    color: var(--green);
+}
+
+.cardBike a{
+    text-decoration: none;
+}
+
+.cardBike button, .botaoConfirmar{
+    padding: 10px;
+    display: block;
+    justify-self: center;
+    width: 95%;
+    align-self: center;
+    font-size: 30px;
+    font-family: var(--font-display);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--green);
+    transition: 0.3s ease;
+}
+
+.cardBike button:hover, .botaoConfirmar:hover{
+    background-color: var(--green-dark);
+}
+
+.cardBike.indisponivel{
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-display);
+    background-color: var(--white);
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+.cardBike.indisponivel button{
+    padding: 10px;
+    width: 95%;
+    align-self: center;
+    font-size: 30px;
+    font-family: var(--font-display);
+    color: var(--slate-700);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--slate-200);
+    transition: 0.3s ease;
+}
+
+.cardBike.indisponivel small, .cardBike.indisponivel .preco p{
+    font-size: 25px;
+    color: var(--slate-500);
+}
+
+.cardBike.indisponivel .imgBike p{
+    background-color: var(--slate-700);
+    color: var(--white);
+}
+
+.banner{
+    background-color: var(--green);
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.banner div{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.banner h1{
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.banner p{
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 20px;
+}
+
+.banner a{
+    color: var(--green-dark);
+    background-color: var(--white);
+    padding: 20px;
+    padding-inline: 50px;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+.banner a:hover{
+    background-color: var(--slate-200);
+}
+
+.formularioAluguel{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cardPreco{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.infoCard{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.infoCard img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.textoInfo small{
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    color: var(--green);
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.textoInfo h1{
+    font-weight: 800;
+    font-size: 40px;
+    font-family: var(--font-display);
+}
+
+.textoInfo p{
+    font-size: 30px;
+    color: var(--green);
+    font-family: var(--font-display);
+    padding: 0;
+    margin: 0;
+}
+
+.infoPreco{
+    width: 20%;
+}
+
+.infoPreco small{
+    text-transform: none;
+    color: var(--slate-500);
+    font-family: var(--font-display);
+    font-size: 30px;
+}
+
+.infoPreco h1{
+    font-family: var(--font-display);
+    font-size: 90px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    font-family: var(--font-display);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+form input{
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--slate-400);
+    font-size: 20px;
+}
+
+.secoesForm{
+    text-transform: uppercase;
+    color: var(--slate-500);
+}
+
+.telefoneForm{
+    width: 50%;
+}
+
+.enderecoSecao .logradouroGeral{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+}
+
+.enderecoSecao .logradouroDetalhe{
+    display: grid;
+    grid-template-columns: 10% 39% 39% 10%;
+}
+
+.periodoSecao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.consultaPreco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--green-pale);
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.consultaPreco p, .consultaPreco small{
+    font-size: 25px;
+    font-family: var(--font-display);
+    color: var(--green-dark);
+}
+
+.consultaPreco h1{
+    font-family: var(--font-display);
+    font-size: 50px;
+    color: var(--green-dark);
+}
