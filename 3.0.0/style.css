@@ -9,6 +9,12 @@ body{
     color: #767676;
 }
 
+main{
+    display: block;
+    z-index: 1;
+    padding: 20px;
+}
+
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -16,7 +22,6 @@ body{
 }
 
 .img{
-    background-image: url(../assets/shukaku.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,16 +33,17 @@ body{
     background-color: #e7e7e7;
     width: 500px;
     height: 500px;
+    padding: 10px;
 }
 
 .modal{
     display: none;
     position: fixed;
     z-index: 1000;
-    right: 50%;
-    top: 50%;
-    left: 50%;
-    background-color: aqua;
+    left: 27%;
+    top: 15%; 
+    width: 700px;
+    padding: 20px;
 }
 
 .imgModal{
