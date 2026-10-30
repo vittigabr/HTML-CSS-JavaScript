@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <section class="section login-section">
+    <section class="section login-section" id="login">
         <div class="div-container">
             <h2>Bem-vindo!</h2>
             <form action="" class="form-container">
@@ -19,9 +19,10 @@
 
                 <input type="submit" value="Entrar" class="botao">
             </form>
-            <p>Não tem conta? <a href="#cadastro" class="clique">Clique aqui</a></p>
+            <p>Não tem conta? <a id="pageCadastro" href="#" class="clique">Clique aqui</a></p>
         </div>
     </section>
+
     <section class="section cadastro-section" id="cadastro">
         <div class="div-container">
             <h2>Bem-vindo!</h2>
@@ -44,8 +45,10 @@
                 <p class="condicoes">Ao "Continuar", aceito os <span>Termos e Condições</span> e autorizo o uso dos meus dados de acordo com a <span>Declaração de privacidade</span></p>
 
                 <input type="submit" value="Cadastrar" class="botao">
+                <p>Tem conta? <a id="pageCadastro" href="#" class="clique">Clique aqui</a></p>
             </form>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
