@@ -1,0 +1,56 @@
+[
+    [{
+        "id": 1,
+        "name": "shukaku",
+        "datas": "jinchuurikis: gaara",
+        "url": "../assets/shukaku.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "matatabi",
+        "datas": "jinchuurikis: yugito",
+        "url": "../assets/matatabi.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "isobu",
+        "datas": "jinchuurikis: yagura",
+        "url": "../assets/isobu.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "son goku",
+        "datas": "jinchuurikis: hoshi",
+        "url": "../assets/sonGoku.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "kokuo",
+        "datas": "jinchuurikis: han",
+        "url": "../assets/kokuo.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "saiken",
+        "datas": "jinchuurikis: utakata",
+        "url": "../assets/saiken.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "chomei",
+        "datas": "jinchuurikis: fuu",
+        "url": "../assets/chomei.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "gyuuki",
+        "datas": "jinchuurikis: killer bee",
+        "url": "../assets/gyuuki.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "kurama",
+        "datas": "jinchuurikis: naruto",
+        "url": "../assets/kurama.jpeg"
+    }]
+]
