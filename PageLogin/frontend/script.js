@@ -4,13 +4,13 @@ const cadastro = document.getElementById('cadastro')
 
 botao.forEach(botao => {
     botao.addEventListener('click', () => {
-        if(login.style.display.includes('flex')){
-            login.style.display = 'none'
-            cadastro.style.display = 'flex'
+        if(login.classList.contains('ativo')){
+            login.classList.remove('ativo')
+            cadastro.classList.add('ativo')
         }
         else{
-            login.style.display = 'flex'
-            cadastro.style.display = 'none'
+            cadastro.classList.remove('ativo')
+            login.classList.add('ativo')
         }
     })
 })
