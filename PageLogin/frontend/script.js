@@ -14,3 +14,106 @@ botao.forEach(botao => {
         }
     })
 })
+
+// Parte do cadastro
+cadastro.addEventListener('submit', async (evento) => {
+    
+    // Impede o carregamento automático da página
+    evento.preventDefault()
+
+    // Captura os valores de campo
+    const emailCadastro = document.getElementById('emailCadastro').value
+    const telefone = document.getElementById('telefone').value
+    const nome = document.getElementById('nome').value
+    const senhaCadastro = document.getElementById('senhaCadastro').value
+
+    try{
+
+        // Envia os dados ao Back
+        const resposta = await fetch(
+            'http://localhost:3306/usuarios/cadastro',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    nome,
+                    emailCadastro,
+                    telefone,
+                    senhaCadastro
+                })
+            }
+        )
+
+        // Transforma a resposta json em objeto js
+        const dados = await resposta.json()
+
+        // Verifica se o servidor respondeu erro
+        if(!resposta.ok){
+            throw new Error(dados.mensagem)
+        }
+
+        alert(dados.mensagem)
+
+        cadastro.reset()
+    }
+    catch(erro){
+        
+        alert(erro.mensagem)
+    }
+})
+
+// Parte do login
+login.addEventListener('submit', async (evento) => {
+    
+    // Impede o carregamento automático da página
+    evento.preventDefault()
+
+    // Captura os valores do campo
+    const emailLogin = document.getElementById('emailLogin').value
+    const senhaLogin = document.getElementById('senhaLogin').value
+
+    try{
+
+        // Envia os dados ao Back
+        const resposta = await fetch(
+            'http://localhost:3306/usuarios/login',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    emailLogin,
+                    senhaLogin
+                })
+            }
+        )
+
+        // Transforma a resposta json em objeto js
+        const dados = await resposta.json()
+
+        // Verifica se o servidor respondeu erro
+        if(!resposta.ok){
+            throw new Error(dados.mensagem)
+        }
+
+        // Guarda o token durante a sessão da aba
+        sessionStorage.setItem('token', dados.token)
+
+        // Guarda os dados básicos do usuário
+        sessionStorage.setItem(
+            'usuario',
+            JSON.stringify(dados.usuario)
+        )
+
+        alert(dados.mensagem)
+
+        login.reset()
+    }
+    catch(erro){
+
+        alert(erro.mensagem)
+    }
+})
