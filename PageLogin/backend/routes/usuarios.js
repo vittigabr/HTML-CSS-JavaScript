@@ -18,7 +18,7 @@ router.post('/cadastro', async (req, res) => {
 
         // verifica se o email já existe
         const [existente] = await conexao.execute(
-            'select id from usuario where email = ?', [email]
+            'select id_usuario from usuario where email = ?', [email]
         )
 
         if(existente.length > 0){

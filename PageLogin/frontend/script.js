@@ -31,7 +31,7 @@ cadastro.addEventListener('submit', async (evento) => {
 
         // Envia os dados ao Back
         const resposta = await fetch(
-            'http://localhost:3306/usuarios/cadastro',
+            'http://localhost:3000/usuarios/cadastro',
             {
                 method: 'POST',
                 headers: {
@@ -39,9 +39,9 @@ cadastro.addEventListener('submit', async (evento) => {
                 },
                 body: JSON.stringify({
                     nome,
-                    emailCadastro,
+                    email: emailCadastro,
                     telefone,
-                    senhaCadastro
+                    senha: senhaCadastro
                 })
             }
         )
@@ -56,11 +56,11 @@ cadastro.addEventListener('submit', async (evento) => {
 
         alert(dados.mensagem)
 
-        cadastro.reset()
+        evento.target.reset()
     }
     catch(erro){
         
-        alert(erro.mensagem)
+        alert(erro.message)
     }
 })
 
@@ -78,15 +78,15 @@ login.addEventListener('submit', async (evento) => {
 
         // Envia os dados ao Back
         const resposta = await fetch(
-            'http://localhost:3306/usuarios/login',
+            'http://localhost:3000/usuarios/login',
             {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify({
-                    emailLogin,
-                    senhaLogin
+                    email: emailLogin,
+                    senha: senhaLogin
                 })
             }
         )
@@ -110,10 +110,10 @@ login.addEventListener('submit', async (evento) => {
 
         alert(dados.mensagem)
 
-        login.reset()
+        evento.target.reset()
     }
     catch(erro){
 
-        alert(erro.mensagem)
+        alert(erro.message)
     }
 })
